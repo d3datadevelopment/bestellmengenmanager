@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://heidelpay.oxiddemo.com/" />
+<title>setAdminRoundOn</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">setAdminRoundOn</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}admin/?force_sid=reset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usr</td>
+	<td>support@shopmodule.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pwd</td>
+	<td>268090</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>css=html frameset frame#adminnav</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=html#nav body table tbody tr td.main ul li#nav-2-1.exp ul li#nav-2-1-1 a.rc b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>css=html frameset frame#edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>xpath=/html/body/div[2]/table/tbody/tr/td/fieldset/table/tbody/tr[2]/td[3]/b</td>
+	<td>D3 Bestellmengen Manager</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=html body div.box table tbody tr td.edittext fieldset table tbody tr td.listitem</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=html body div.box table tbody tr td.edittext fieldset table tbody tr#d3oqm td.listitem table tbody tr td.edittext input[name=&quot;value[d3_cfg_mod__blAddRoundedVEAmounts]&quot;]:checked</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/table/tbody/tr/td/fieldset/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/input[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=html body div.box table tbody tr td.edittext fieldset table tbody tr#d3oqm td.listitem table tbody tr td span.d3modcfg_btn input.edittext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

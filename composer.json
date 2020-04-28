@@ -1,0 +1,50 @@
+{
+  "name": "d3/oqm",
+  "description": "D3 Bestellmengenmanager",
+  "type": "oxideshop-module",
+  "keywords": [
+    "oxid",
+    "modules",
+    "eShop",
+    "d3",
+    "packung",
+    "minimal",
+    "maximal",
+    "menge"
+  ],
+  "authors": [
+    {
+        "name": "D3 Data Development (Inh. Thomas Dartsch)",
+        "email": "info@shopmodule.com",
+        "homepage": "http://www.d3data.de",
+        "role": "Owner"
+    }
+  ],
+  "support": {
+    "email": "support@shopmodule.com"
+  },
+  "homepage": "https://www.oxidmodule.com/",
+  "license": [
+    "proprietary"
+  ],
+  "extra": {
+    "oxideshop": {
+      "source-directory": "/src",
+      "target-directory": "d3/oqm"
+    },
+    "patches": {
+      "oxid-esales/azure-theme": {
+        "add OQM changes to azure theme files - 2020-02-17": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c23a0c35cd4ba1acc75f7b678f57e53e9aa7242a/azure_theme_142.patch"
+      },
+      "oxid-esales/flow-theme": {
+        "add OQM changes to flow theme files - 2020-02-17": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c23a0c35cd4ba1acc75f7b678f57e53e9aa7242a/flow_theme_330.patch"
+      }
+    }
+  },
+  "require": {
+    "php": "5.6 - 7.0", "ext-ionCube-Loader": "*",
+    "oxid-esales/oxideshop-ce": "6.0 - 6.3",
+    "d3/modcfg": "^5.1.1.000",
+    "cweagans/composer-patches": "~1.6.0"
+  }
+}

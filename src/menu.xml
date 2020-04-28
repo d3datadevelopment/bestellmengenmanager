@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="d3mxd3modules">
+        <MAINMENU id="d3oqm">
+            <SUBMENU id="d3smoqm_settings" cl="d3_oqm_controllers_admin_base" list="d3_oqm_controllers_admin_list" rights="malladmin">
+                <TAB id="d3taboqm_settings" cl="d3_oqm_controllers_admin_settings"/>
+                <TAB id="d3taboqm_support" cl="d3_oqm_controllers_admin_support"/>
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>
