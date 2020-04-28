@@ -1,0 +1,5 @@
+[{$smarty.block.parent}]
+[{d3modcfgcheck modid="d3oqm"}][{/d3modcfgcheck}]
+[{if $mod_d3oqm}]
+    [{include file="d3_oqm_views_tpl_script.tpl"}]
+[{/if}]

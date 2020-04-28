@@ -1,0 +1,36 @@
+From acdba7a2db3362207b8d552971f89075e97887e0 Mon Sep 17 00:00:00 2001
+From: Daniel Seifert <ds@shopmodule.com>
+Date: Thu, 6 Feb 2020 14:26:50 +0100
+Subject: [PATCH] add OQM changes to flow theme files
+
+---
+ tpl/page/compare/inc/compareitem.tpl | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+diff --git a/tpl/page/compare/inc/compareitem.tpl b/tpl/page/compare/inc/compareitem.tpl
+index b2830df..d520fe1 100644
+--- a/tpl/page/compare/inc/compareitem.tpl
++++ b/tpl/page/compare/inc/compareitem.tpl
+@@ -38,7 +38,7 @@
+         [{assign var="blShowToBasket" value=false}]
+     [{/if}]
+ 
+-    <form name="tobasket.[{$testid}]" [{if $blShowToBasket}]action="[{$oViewConf->getSelfActionLink()}]" method="post"[{else}]action="[{$_productLink}]" method="get"[{/if}]>
++    <form name="tobasket.[{$testid}]" [{if $blShowToBasket}]action="[{$oViewConf->getSelfActionLink()}]" method="post" [{else}]action="[{$_productLink}]" method="get"[{/if}]>
+         <div class="variants">
+             [{oxhasrights ident="TOBASKET"}]
+                 [{if $blShowToBasket}]
+@@ -90,7 +90,12 @@
+                 [{if $blShowToBasket}]
+                     [{oxhasrights ident="TOBASKET"}]
+                         <div class="input-group">
+-                            <input type="text" name="am" value="1" size="3" autocomplete="off" class="form-control" title="[{oxmultilang ident="QUANTITY"}]">
++
++                            [{* D3 MOD OQM START CHANGED *}]
++                            [{block name="d3oqm_flow_page_compare_inc_compareitem_amount"}]
++                                <input type="text" name="am" value="1" size="3" autocomplete="off" class="form-control" title="[{oxmultilang ident="QUANTITY"}]">
++                            [{/block}]
++                            [{* D3 MOD OQM END CHANGED *}]
+                             <span class="input-group-btn">
+                                 <button type="submit" class="btn btn-primary hasTooltip" title="[{oxmultilang ident="TO_CART"}]">
+                                     <i class="fa fa-shopping-cart"></i>
