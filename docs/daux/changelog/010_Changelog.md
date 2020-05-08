@@ -2,6 +2,11 @@
 title: Changelog
 ---
 
+## 5.0.3.0 - (2020-05-07)
+0000000: module is ported to oxid V6.2 (oxid-ce-package 6.5)
+
+---
+
 ## 5.0.2.1 - (2020-04-28)
 ### Changed
 0000000: Dokumentation angepasst
