@@ -1,68 +1,86 @@
-<?php //006f4
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Bestellmengenmanager @version 5.0.3.0 PHP71 (08.05.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+$sLangName = "Deutsch";
+if (class_exists(D3\ModCfg\Application\Model\d3utils::class)) {
+    $sLogo = \D3\ModCfg\Application\Model\d3utils::getInstance()->getD3Logo();
+    $sLogo = str_replace('"', '\'', $sLogo);
+} else {
+    $sLogo = 'D&sup3;';
+}
+
+$aLang = array(
+    'charset' => 'UTF-8',
+
+    'd3oqm'                                 => 'Bestellmengenmanager',
+    'd3smoqm_settings'                      => 'Einstellungen',
+    'd3taboqm_settings'                     => 'Grundeinstellungen',
+    'd3taboqm_support'                      => 'Support',
+    'D3OQM_ACTIVE'                          => 'Aktiv?',
+    'D3OQM_LOGLEVEL'                        => 'Logging',
+    //    'HELP_D3OQM_LOGLEVEL'                       => 'Bestellgrenze',
+    'D3OQM_LIMITTYPE'                       => 'Bestellgrenze',
+    'D3OQM_LIMITTYPE_VE'                    => 'Verpackungseinheit',
+    'D3OQM_LIMITTYPE_MIN'                   => 'Mindestmenge',
+    'D3OQM_LIMITTYPE_NO'                    => 'keine Begrenzung',
+    'D3OQM_LIMITTYPE_MAX'                   => 'Maximalmenge',
+    'D3OQM_TITLE'                           => $sLogo . ' Bestellmengen Manager',
+    'D3OQM_PLAIN_TITLE'                     => 'D3 Bestellmengen Manager',
+    'D3OQM_RULES'                           => 'Allgemeine Regeln & Tipps:',
+    'HELP_D3OQM_RULES'                      => '<h3>Allgemeine Regeln & Tipps</h3>'
+        . 'Die eingegebenen Bestellmengen reagieren aufeinander. D.h. das Modul versucht die Bestellmengen zu verifizieren (Plausibilit&auml;tspr&uuml;fung).<br>'
+        . 'Hier ein paar Regeln und Tipps, wie man die gr&ouml;bsten Fehler aus dem Weg gehen kann:'
+        . '<ul>'
+        . ' <li>unsinnige Mengen sollten vermieden werden <br>(bspw. minimale Menge gr&ouml;&szlig;er als maximal Menge)</li>'
+        . ' <li>fehleranf&auml;llige Mengen sollten ebenfalls vermieden werden <br>'
+        . '(bspw. die minimale Menge sollte mindestens die Verpackungseinheit sein oder ein vielfaches davon )</li>'
+        // Beispiele auffuehren
+        . '</ul>',
+    'D3OQM_INHERITANCE'                     => 'Regeln zur Vererbung (Variantenartikel):',
+    'HELP_D3OQM_INHERITANCE'                => '<h3>Regeln zur Vererbung (Variantenartikel)</h3>'
+        . 'Die Bestellmengen werden automatisch vererbt. Folgende Logik wird hier angewandt:<br>'
+        . '<ul>'
+        . ' <li>'
+        . '  F&uuml;r Elternartikel und allgemein gilt:'
+        . '  <ul>'
+        . '   <li>m&ouml;gliche Werte sind dezimale Zahlen [0-9] und Leerzeichen (bspw. Leertaste, keine Eingabe) </li>'
+        . '   <li>Zahlen (Wertebereich [0-9]) werden an die Varianten vererbt</li>'
+        . '   <li>bei Leerzeichen wird die Option deaktiviert, anders wie bei der Zahl 0. Die Zahl 0 wird bei Varianten'
+        . ' relevant (siehe n&auml;chsten Vererbung).</li>'
+        . '  </ul>'
+        . ' </li>'
+        . ' <li>'
+        . '  F&uuml;r Variantenartikel (Vererbung) gilt:'
+        . '  <ul>'
+        . '   <li>Zahlen gr&ouml;&szlig;er 0 &uuml;berschreibt die vererbte Menge <br>'
+        . '(Elternart. minimale Menge = 10, Variante minimale Menge = 20, bedeutet dass die Variante eine minimale Bestellmenge von 20 hat)</li>'
+        . '   <li>0 deaktiviert die vererbte Menge<br>(Elternart. minimale Menge = 10, Variante minimale Menge = 0, bedeutet dass die Variante keine minimale Bestellmenge hat)</li>'
+        . '   <li>Leerzeichen oder keine Eingabe stellt die Vererbung wieder her</li>'
+        . '  </ul>'
+        . ' </li>'
+        . '</ul>',
+
+    /*article_list*/
+    'GENERAL_ARTICLE_D3OQM_MINIMUM'         => 'D3 min. Bestellmenge',
+    'GENERAL_ARTICLE_D3OQM_MAXIMUM'         => 'D3 max. Bestellmenge',
+    'GENERAL_ARTICLE_D3OQM_PACKAGE'         => 'D3 Verpackungseinheit',
+
+    /*Einstellungen*/
+    'D3OQM_ROUNDEDAMOUNT'                   => 'Soll bei unzureichenden Bestellmengen eine korrigierte'
+        . ' Menge in den Warenkorb gelegt werden?',
+    'D3OQM_MATHROUND'                       => 'Soll mathematisch gerundet werden? (Inaktiv: es wird immer aufgerundet)',
+    'D3OQM_INFO'                            => 'Wenn bei unzureichenden Bestellmengen die aufgerundete Anzahl in den Warenkorb gelegt'
+        . ' werden soll,<br> dann k&ouml;nnen Sie dies hier bestimmen. <br>'
+        . '<sup>(Bei &Auml;nderungen m&uuml;ssen ggf. die Cookies geleert werden.)</sup><br><br>',
+    'D3OQM_USEREMAININGSTOCK'               => 'Soll die Restmenge genutzt werden?',
+    'HELP_D3OQM_USEREMAININGSTOCK'          => 'Aktiv: Sobald der Lagerstand des Artikels unter der Verpackungseinheit oder der Mindestmenge liegt, werden alle 3 Optionen im Frontend auf den Lagerbestand angepasst.<br><br>'
+        . 'Bspw: Der Artikel hat einen Lagerbestand von 7,<br> eine bestellbare Mindestmenge von 10,<br> eine bestellbare Maximalmenge von 50 <br> und eine Verpackungseinheit von 5.<br>'
+        . 'Im Frontend wird der Artikel mit den folgenden Werten angeboten. (alle Werte wurden auf den restlichen Lagerbestand gesetzt): '
+        . '<ul><li>Mindestmenge: 7</li>'
+        . '<li>Maximalmenge: 7</li>'
+        . '<li>Verpackungseinheit: 7</li></ul>'
+        . '<br>Diese Option ist abhängig von der aktiven Shopeinstellung "Lagerverwaltung aktiv" sowie am Artikel hinterlegten "Lieferstatus" und "Lagerbestand.',
+    'D3OQM_SHOWBASKETINFO'          => 'Sollen die Bestellmengen im Warenkorb angezeigt werden?',
+    'HELP_D3OQM_SHOWBASKETINFO'     => 'Aktiv: die Bestellmengen eines konfigurierten Artikels werden im Bestellschritt 1 Warenkorbübersicht angezeigt.',
+    // Installation
+    'D3OQM_INSTALLATION_OLDSMARTYFILEFOUND' => 'Es wurde eine alte Smarty Datei gefunden. Bitte löschen Sie folgende Datei:',
+);

@@ -1,63 +1,181 @@
-<?php //006f4
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Bestellmengenmanager @version 5.0.3.0 PHP71 (08.05.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+use D3\ModCfg\Application\Model\d3utils;
+use D3\ModCfg\Application\Model\Install\d3install;
+
+$sMetadataVersion = '1.2';
+if (class_exists(D3\ModCfg\Application\Model\d3utils::class)) {
+    $sLogo = D3\ModCfg\Application\Model\d3utils::getInstance()->getD3Logo();
+} else {
+    $sLogo = 'D&sup3;';
+}
+
+$sModuleId = 'd3oqm';
+
+$aModule = array(
+    'id'             => $sModuleId,
+    'title'          => $sLogo . ' Bestellmengenmanager',
+    'description'    => 'Legen Sie fest, in welchen Mengen bzw. Packungsgr&ouml;&szlig;en Sie ihre Produkte abgeben.' //
+        . 'Der Kunde wird bei unpassender Mengenangabe informiert.' //
+        . 'Optional wird die korrigierte Menge in den Warenkorb gelegt.' //
+        . 'Alle Einstellungen sind im Admin zu setzen.</br>' //
+        . 'Wenn das Modul &uuml;ber den Shop aktiviert wurde, muss danach unter:</br>' //
+        . '<strong>/D&sup3; Module/Modul-Connector/Modulverwaltung/</strong> das Modul aktiviert werden.',
+    'thumbnail'      => 'picture.png',
+    'version'        => '5.0.4.0',
+    'author'         => 'D&sup3; Data Development',
+    'email'          => 'support@shopmodule.com',
+    'url'            => 'http://www.oxidmodule.com/',
+    'events'         => array(
+        'onActivate' => d3install::class . '::checkUpdateStart',
+    ),
+
+    'files'          => array(
+        'd3_d3oqm_model_handler'            => 'd3/oqm/models/handler.php',
+        'd3_oqm_Setup_InstallRoutine'       => 'd3/oqm/Setup/Installroutine.php',
+        'd3_oqm_controllers_admin_base'     => 'd3/oqm/Controllers/Admin/Base.php',
+        'd3_oqm_controllers_admin_list'     => 'd3/oqm/Controllers/Admin/List.php',
+        'd3_oqm_controllers_admin_settings' => 'd3/oqm/Controllers/Admin/Settings.php',
+        'd3_oqm_controllers_admin_support'  => 'd3/oqm/Controllers/Admin/Support.php',
+    ),
+
+    'templates'      => array(
+        'd3_msg_basket_oqm_error.tpl'         => 'd3/oqm/views/tpl/d3_msg_basket_oqm_error.tpl',
+        'd3_oqm_views_tpl_script.tpl'         => 'd3/oqm/views/tpl/script.tpl',
+        'd3_oqm_views_admin_tpl_settings.tpl' => 'd3/oqm/views/admin/tpl/settings.tpl',
+        'd3_oqm_views_tpl_basketitem.tpl'     => 'd3/oqm/views/tpl/basketitem.tpl',
+    ),
+
+    'extend'         => array(
+        \OxidEsales\Eshop\Application\Model\Article::class   => 'd3/oqm/modules/application/models/d3_oxarticle_oqm',
+        \OxidEsales\Eshop\Application\Model\Basket::class    => 'd3/oqm/modules/application/models/d3_oxbasket_oqm',
+        \OxidEsales\Eshop\Core\UtilsView::class              => 'd3/oqm/modules/core/d3_oxutilsview_oqm',
+        \OxidEsales\Eshop\Core\ViewConfig::class             => 'd3/oqm/modules/core/d3_oxviewconfig_oqm',
+    ),
+
+    'blocks'         => array(
+        [
+            'template' => 'page/details/inc/productmain.tpl',
+            'block'    => 'details_productmain_tobasket',
+            'file'     => 'views/blocks/details_productmain_tobasket.tpl'
+        ],
+        [
+            // Azure only
+            'template' => 'widget/minibasket/minibasket.tpl',
+            'block'    => 'widget_minibasket',
+            'file'     => 'views/blocks/widget_minibasket.tpl'
+        ],
+        [
+            'template' => 'widget/product/listitem_grid.tpl',
+            'block'    => 'widget_product_listitem_grid_tobasket',
+            'file'     => 'views/blocks/widget_product_listitem_grid_tobasket.tpl'
+        ],
+        [
+            // Azure only
+            'template' => 'widget/product/bargainitem.tpl',
+            'block'    => 'widget_product_bargainitem_tobasket',
+            'file'     => 'views/blocks/widget_product_bargainitem_tobasket.tpl'
+        ],
+        [
+            // Azure only
+            'template' => 'widget/product/bargainitems.tpl',
+            'block'    => 'widget_product_bargainitem_tobasket',
+            'file'     => 'views/blocks/widget_product_bargainitem_tobasket.tpl'
+        ],
+        [
+            'template' => 'widget/product/listitem_infogrid.tpl',
+            'block'    => 'widget_product_listitem_infogrid_tobasket',
+            'file'     => 'views/blocks/d3getminamount_input_field.tpl'
+        ],
+        [
+            'template' => 'widget/product/listitem_line.tpl',
+            'block'    => 'widget_product_listitem_line_tobasket',
+            'file'     => 'views/blocks/widget_product_listitem_line_tobasket.tpl'
+        ],
+        [
+            'template' => 'article_extend.tpl',
+            'block'    => 'admin_article_extend_form',
+            'file'     => 'views/admin/blocks/admin_article_extend_form.tpl'
+        ],
+        [
+            // Modal?
+            'template' => 'layout/header.tpl',
+            'block'    => 'header_main',
+            'file'     => 'views/blocks/header_main.tpl'
+        ],
+        [
+            // Modal?
+            'template' => 'layout/footer.tpl',
+            'block'    => 'footer_main',
+            'file'     => 'views/blocks/footer_main.tpl'
+        ],
+        [
+            'template' => 'layout/base.tpl',
+            'block'    => 'base_js',
+            'file'     => 'views/blocks/base_js.tpl'
+        ],
+        [
+            // Azure only
+            'template' => 'page/compare/compare.tpl',
+            'block'    => 'd3oqm_azure_page_compare_amount',
+            'file'     => 'views/blocks/d3oqm_azure_page_compare_amount.tpl'
+        ],
+        [
+            // Azure only
+            'template' => 'widget/minibasket/minibasketmodal.tpl',
+            'block'    => 'd3oqm_azure_widget_minibasket_minibasketmodal_script',
+            'file'     => 'views/blocks/d3oqm_azure_widget_minibasket_minibasketmodal_script.tpl'
+        ],
+        [
+            // Azure only
+            'template' => 'widget/product/compareitem.tpl',
+            'block'    => 'd3oqm_azure_widget_product_compareitem_amount',
+            'file'     => 'views/blocks/d3oqm_azure_widget_product_compareitem_amount.tpl'
+        ],
+        [
+            // Flow only
+            'template' => 'page/compare/inc/compareitem.tpl',
+            'block'    => 'd3oqm_flow_page_compare_inc_compareitem_amount',
+            'file'     => 'views/blocks/d3oqm_flow_page_compare_inc_compareitem_amount.tpl'
+        ],
+        [
+            // Wave only
+            'template' => 'page/compare/inc/compareitem.tpl',
+            'block'    => 'd3oqm_wave_page_compare_inc_compareitem_amount',
+            'file'     => 'views/blocks/d3oqm_wave_page_compare_inc_compareitem_amount.tpl'
+        ],
+        [
+            'template' => 'page/checkout/inc/basketcontents_table.tpl',
+            'block'    => 'dd_checkout_inc_basketcontents_table_item_desc',
+            'file'     => 'views/blocks/dd_checkout_inc_basketcontents_table_item_desc.tpl'
+        ],
+        [
+            'template' => 'page/checkout/inc/basketcontents_list.tpl',
+            'block'    => 'checkout_basketcontents_basketitem_titlenumber',
+            'file'     => 'views/blocks/checkout_basketcontents_basketitem_titlenumber.tpl'
+        ],
+        [
+            // Azure only
+            'template' => 'page/checkout/inc/basketcontents.tpl',
+            'block'    => 'checkout_basketcontents_basketitem_persparam_editable',
+            'file'     => 'views/blocks/azure_checkout_basketcontents_basketitem_titlenumber.tpl'
+        ],
+    ),
+    'settings'    => [
+        [
+            'group' => 'd3thememapping_global',
+            'name' => 'd3custParentThemeMappedToWave_'.$sModuleId,
+            'type' => 'str',
+        ],
+        [
+            'group' => 'd3thememapping_global',
+            'name' => 'd3custParentThemeMappedToFlow_'.$sModuleId,
+            'type' => 'str',
+        ],
+        [
+            'group' => 'd3thememapping_global',
+            'name' => 'd3custParentThemeMappedToAzure_'.$sModuleId,
+            'type' => 'str',
+        ],
+    ],
+);

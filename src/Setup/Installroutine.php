@@ -1,154 +1,412 @@
-<?php //006f4
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Bestellmengenmanager @version 5.0.3.0 PHP71 (08.05.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+use D3\ModCfg\Application\Model\Install\d3install_updatebase;
+use D3\ModCfg\Application\Model\Installwizzard\d3installconfirmmessage;
+use OxidEsales\Eshop\Core\Registry;
+
+/**
+ * User: kristianhempel
+ * Date: 04.03.13
+ * automatische Installation
+ */
+class d3_oqm_Setup_InstallRoutine extends d3install_updatebase
+{
+    // Standardwert f�r checkModCfgSameRevision() und updateModCfgSameRevision()
+    public $sModKey = 'd3oqm';
+    public $sModName = 'D3 Bestellmengen Manager';
+    public $sModVersion = '5.0.4.0';
+    public $sModRevision = '5040';
+    public $sBaseConf = '9qMv2==YmI5L0pxYnZFbmIwMHhFa1hiMkgyT0thVHFSK0xsaERvYVVoeXFBNU1td3lLcXBiSEMzZ2h3e
+kw3QWRnZi9iZWdPOTh0a0V6ZHA5MEJNbTBaRmcwaTVWeGJZVTFicGFIUkpXLzhXNFJQc3YwaUZtUk5Xd
+zFscjdxOUQ5eDRvbG93S2ExVDVwa2lyUVJXb0s5OHF3Sy9XdWloTGlZbmh0WFZQRWhicVQ0Tk0zM3ZQT
+UhSMitWMU1BOTNPbWNoRm82azBlMW9ZTWVQbDM4STRmd1YvaCtvM05xN1ZCU1BqN0NjWWRmNFg5bUFVT
+HkrdHoydzkvdDcrUVN4Y3E0RUVDY29OZnQzU1duYmRNMHpKYUpsNlR1WXgzWU5lallQTjRIU0M5dHUwe
+GU3SmVoc2REeExCZ0hWY08ydXJ2Qk0wcno=';
+
+    public $sBaseValue = '';
+    public $sMinModCfgVersion = '5.3.0.0';
+
+    // auszuf�hrende Check- und Updateanweisungen in auszuf�hrender Reihenfolge
+    protected $_aUpdateMethods = array(
+        array(
+            'check' => 'checkModCfgItemExist',
+            'do'    => 'updateModCfgItemExist'
+        ),
+        array(
+            'check' => 'checkWrongTemplateBlock',
+            'do'    => 'fixWrongTemplateBlock',
+        ),
+        array(
+            'check' => 'hasOldOxmoduleInOxtplblocks',
+            'do'    => 'fixOldOxmoduleInOxtplblocks',
+        ),
+        array(
+            'check' => 'checkFields',
+            'do'    => 'fixFields'
+        ),
+        array(
+            'check' => 'checkIndizes',
+            'do'    => 'fixIndizes'
+        ),
+        array(
+            'check' => 'hasInitialTypeField',
+            'do'    => 'updateInitialTypeField',
+        ),
+        array(
+            'check' => 'hasInitialValueField',
+            'do'    => 'updateInitialValueField',
+        ),
+        array(
+            'check' => 'hasOldSmartyFiles',
+            'do'    => 'messageOldSmartyFiles',
+        ),
+        array(
+            'check' => 'checkModCfgSameRevision', // pr�ft auf nachgezogene Revisionsnummer und �bertr�gt diese ggf.
+            'do'    => 'updateModCfgSameRevision'
+        ),
+    );
+
+    /***** Standardwerte f�r aufgerufene Funktionen ********************************************/
+
+    // alle zu aktualisierenden Module, verwendet nicht onDeactivate-Handler
+    protected $_aRefreshMetaModuleIds = array('d3oqm');
+
+    // Standardwerte f�r checkFields(), _addTable() und fixFields()
+    public $aFields = array(
+        array(
+            'sTableName'  => 'oxarticles',
+            'sFieldName'  => 'D3OQM_PACKAGE',
+            'sType'       => 'DOUBLE',
+            'blNull'      => true,
+            'sDefault'    => 'NULL',
+            'sComment'    => 'd3oqm - Bestellmengenmanager Verpackungseinheit',
+            'sExtra'      => '',
+            'blMultilang' => false,
+        ),
+        array(
+            'sTableName'  => 'oxarticles',
+            'sFieldName'  => 'D3OQM_MINIMUM',
+            'sType'       => 'DOUBLE',
+            'blNull'      => true,
+            'sDefault'    => 'NULL',
+            'sComment'    => 'd3oqm - Bestellmengenmanager Minimum',
+            'sExtra'      => '',
+            'blMultilang' => false,
+        ),
+        array(
+            'sTableName'  => 'oxarticles',
+            'sFieldName'  => 'D3OQM_MAXIMUM',
+            'sType'       => 'DOUBLE',
+            'blNull'      => true,
+            'sDefault'    => 'NULL',
+            'sComment'    => 'd3oqm - Bestellmengenmanager Maximum',
+            'sExtra'      => '',
+            'blMultilang' => false,
+        ),
+    );
+
+    // Standardwerte f�r checkIndizes() und fixIndizes()
+    public $aIndizes = array(
+        array(
+            'sTableName'  => 'oxarticles',
+            'sType'       => 'INDEX',
+            'sName'       => 'D3OQMINDEX',
+            'aFields'     => array(
+                'D3OQM_PACKAGE' => 'D3OQM_PACKAGE',
+                'D3OQM_MAXIMUM' => 'D3OQM_MAXIMUM',
+                'D3OQM_MINIMUM' => 'D3OQM_MINIMUM',
+            ),
+            'blMultilang' => false,
+        ),
+    );
+
+    /**
+     * check if wrong template block
+     *
+     * @return bool
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     */
+    public function checkWrongTemplateBlock()
+    {
+        $oShop  = $this->getActShop();
+        $aWhere = array(
+            'oxfile'      => 'd3GetMinAmout_input_field',
+            'oxblockname' => 'widget_product_listitem_grid_tobasket',
+            'oxshopid'    => $oShop->getId(),
+        );
+
+        // NOTE: _checkTableItemExist returns true if not exsist
+        return !$this->_checkTableItemNotExist('oxtplblocks', $aWhere);
+    }
+
+    /**
+     * fix Version 3.2.0.1
+     *
+     * @return bool
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\ConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     */
+    public function fixWrongTemplateBlock()
+    {
+        $blRet = false;
+
+        if ($this->checkWrongTemplateBlock()) {
+            $oShop = $this->getActShop();
+
+            $aWhere = array(
+                'oxfile'      => 'd3GetMinAmout_input_field',
+                'oxblockname' => 'widget_product_listitem_grid_tobasket',
+                'oxshopid'    => $oShop->getId(),
+            );
+
+            // abw�rtskompatibel auch mit Feldname als Key (siehe "OXNAME"),
+            // dann jedoch keine Duplikatentfernung bei mehrfacher Feldzuweisung.
+            $aInsertFields = array(
+                array(
+                    // Feldname ggf. sprachspezifisch mit _getLangAbbrFieldName()
+                    'fieldname'     => 'OXFILE',
+                    // Feldinhalt
+                    'content'       => 'widget_product_listitem_grid_tobasket.tpl',
+                    // bei Update, Inhalt wird �berschrieben
+                    'force_update'  => true,
+                    // Inhalt muss gequoted werden
+                    'use_quote'     => true,
+                    // Multilang-Felder auf Basis dieses Feldes werden bei INSERT mit diesem Wert gef�llt,
+                    // wenn diese in der Liste nicht anderweitig belegt sind
+                    'use_multilang' => false,
+                ),
+            );
+            $aRet          = $this->_updateTableItem2('oxtplblocks', $aInsertFields, $aWhere);
+            $blRet         = $aRet['blRet'];
+        }
+
+        return $blRet;
+    }
+
+    /**
+     * check if 'd3/d3oqm' is in oxmodule
+     *
+     * @return bool
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     */
+    public function hasOldOxmoduleInOxtplblocks()
+    {
+        $oShop = $this->getActShop();
+
+        $aWhere = array(
+            'oxmodule' => 'd3/d3oqm',
+            'oxshopid' => $oShop->getId(),
+        );
+
+        // NOTE: _checkTableItemExist returns true if not exsist
+        return !$this->_checkTableItemNotExist('oxtplblocks', $aWhere);
+    }
+
+    /**
+     * @return bool
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     */
+    public function fixOldOxmoduleInOxtplblocks()
+    {
+        if ($this->hasOldOxmoduleInOxtplblocks()) {
+            $oShop = $this->getActShop();
+            $aQueries = array(
+                "DELETE FROM oxtplblocks WHERE oxmodule = 'd3/d3oqm' AND  oxshopid = '{$oShop->getId()}';"
+            );
+
+            return $this->_executeMultipleQueries($aQueries);
+        }
+
+        return true;
+    }
+
+    /**
+     * @param null $iDirectNumber
+     *
+     * @return bool
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     */
+    public function hasInitialTypeField($iDirectNumber = null)
+    {
+        $blReturn = false;
+        if ($iDirectNumber === null) {
+            for ($i = 0; $i <= 2; $i++) {
+                $iNumber  = $i == 0 ? null : $i;
+                $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_type{$iNumber}");
+                if ($blReturn) {
+                    return $blReturn;
+                }
+            }
+        } else {
+            $iNumber  = $iDirectNumber == 0 ? null : $iDirectNumber;
+            $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_type{$iNumber}");
+        }
+
+        return $blReturn;
+    }
+
+    /**
+     * @return bool
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     */
+    public function updateInitialTypeField()
+    {
+        $blReturn = false;
+
+        for ($i = 0; $i <= 2; $i++) {
+            if ($this->hasInitialTypeField($i)) {
+                $iNumber  = $i == 0 ? null : $i;
+                $blReturn = $this->_updateInitialTypeField($iNumber);
+            }
+        }
+
+        return $blReturn;
+    }
+
+    /**
+     * @param null $iNumber
+     *
+     * @return bool
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     */
+    protected function _updateInitialTypeField($iNumber = null)
+    {
+        if ($this->hasInitialTypeField($iNumber)) {
+            $aQueries = array(
+                "UPDATE oxarticles SET D3OQM_MINIMUM = IF(d3_ve_value{$iNumber} = 0, NULL, d3_ve_value{$iNumber}) WHERE d3_ve_type{$iNumber} = 'minimum' AND D3OQM_MINIMUM = 0;",
+                "UPDATE oxarticles SET D3OQM_MAXIMUM = IF(d3_ve_value{$iNumber} = 0, NULL, d3_ve_value{$iNumber}) WHERE d3_ve_type{$iNumber} = 'maximum' AND D3OQM_MAXIMUM = 0;",
+                "UPDATE oxarticles SET D3OQM_PACKAGE = IF(d3_ve_value{$iNumber} = 0, NULL, d3_ve_value{$iNumber}) WHERE d3_ve_type{$iNumber} = 'package' AND D3OQM_PACKAGE = 0;",
+                "ALTER TABLE `oxarticles` DROP `d3_ve_type{$iNumber}`;",
+            );
+            $blReturn = $this->_executeMultipleQueries($aQueries);
+            $this->_getDatabaseHandler()->resetFieldCache();
+            if ($blReturn) {
+                $this->_blRequireViewUpdate = true;
+            }
+
+            return $blReturn;
+        }
+
+        return true;
+    }
+
+    /**
+     * definition array see fixFields
+     *
+     *
+     * @return bool
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\ConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     */
+    public function fixFields()
+    {
+        $blReturn = parent::fixFields();
+        if ($blReturn) {
+            $this->_blRequireViewUpdate = true;
+        }
+
+        return $blReturn;
+    }
+
+    /**
+     * @param null $iDirectNumber
+     *
+     * @return bool
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     */
+    public function hasInitialValueField($iDirectNumber = null)
+    {
+        $blReturn = false;
+        if ($iDirectNumber === null) {
+            for ($i = 0; $i <= 2; $i++) {
+                $iNumber  = $i == 0 ? null : $i;
+                $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_value{$iNumber}");
+                if ($blReturn) {
+                    return $blReturn;
+                }
+            }
+        } else {
+            $iNumber  = $iDirectNumber == 0 ? null : $iDirectNumber;
+            $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_value{$iNumber}");
+        }
+
+        return $blReturn;
+    }
+
+    /**
+     * @return bool
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     */
+    public function updateInitialValueField()
+    {
+        $blReturn = false;
+
+        for ($i = 0; $i <= 2; $i++) {
+            if ($this->hasInitialValueField($i)) {
+                $iNumber  = $i == 0 ? null : $i;
+                $blReturn = $this->_updateInitialValueField($iNumber);
+            }
+        }
+
+        return $blReturn;
+    }
+
+    /**
+     * @param null $iNumber
+     *
+     * @return bool
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     */
+    protected function _updateInitialValueField($iNumber = null)
+    {
+        if ($this->hasInitialValueField($iNumber)) {
+            $aQueries = array(
+                "ALTER TABLE `oxarticles` DROP `d3_ve_value{$iNumber}`;"
+            );
+            $blReturn = $this->_executeMultipleQueries($aQueries);
+            $this->_getDatabaseHandler()->resetFieldCache();
+            if ($blReturn) {
+                $this->_blRequireViewUpdate = true;
+            }
+
+            return $blReturn;
+        }
+
+        return true;
+    }
+
+    public function hasOldSmartyFiles()
+    {
+
+        $file = $this->getConfig()->getConfigParam('sShopDir') . 'core/smarty/plugins/function.d3_oqm_getMinAmount.php';
+
+        if( is_file($file)) {
+            return true;
+        }
+        return false;
+    }
+
+    public function messageOldSmartyFiles()
+    {
+        $file = $this->getConfig()->getConfigParam('sShopDir') . 'core/smarty/plugins/function.d3_oqm_getMinAmount.php';
+        /** @var d3installconfirmmessage $oInstallConfirmMessage */
+        $oInstallConfirmMessage = oxNew(d3installconfirmmessage::class, $this);
+        $oInstallConfirmMessage->ConfirmCustomMessage(
+            Registry::getLang()->translateString('D3OQM_INSTALLATION_OLDSMARTYFILEFOUND').  " {$file}"
+        );
+    }
+}

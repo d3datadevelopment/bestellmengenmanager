@@ -11,3 +11,9 @@
 .basketFlyout.d3OQMFlyOut ul{ margin:6px 0 0 15px; }
 .basketFlyout.d3OQMFlyOut li{ list-style:disc outside none; }
 .basketFlyout.d3OQMFlyOut .functions{ border-top:1px solid white; margin-bottom:10px;}
+
+
+/* wave theme */
+.line-view .input-group-append { margin-left:1px; }
+#details_container.details .tobasket-input-group { width:290px; }
+#details_container.details .tobasket-input-group button#toBasket { margin-left:1px; }

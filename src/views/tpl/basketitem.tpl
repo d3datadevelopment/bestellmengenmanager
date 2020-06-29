@@ -1,7 +1,6 @@
 [{d3modcfgcheck modid="d3oqm"}][{/d3modcfgcheck}]
 [{if $editable && $mod_d3oqm
-    && ($oModCfg_d3oqm->getValue('showBasketInfoFlowTable') && $blockinfo === 'table'
-    || $oModCfg_d3oqm->getValue('showBasketInfoFlowList') && $blockinfo === 'list'
+    && ($oModCfg_d3oqm->getValue('showBasketInfo')
     )
 }]
     <div class="small[{$classAdd}]">
