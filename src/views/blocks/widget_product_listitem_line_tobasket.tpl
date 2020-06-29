@@ -80,6 +80,50 @@
         [{else}]
             [{$smarty.block.parent}]
         [{/if}]
+    [{elseif $d3ThemeId === 'wave'}]
+    [{oxstyle include=$oViewConf->getModuleUrl("d3oqm", "out/css/d3oqm.css")}]
+        [{if $blShowToBasket}]
+            [{oxhasrights ident="TOBASKET"}]
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-tweak">
+                            <button class="btn btn-primary" id="d3OqmMinus_[{$testid}]"
+                                    data-target="amountToBasket_[{$testid}]" data-type="-">-
+                            </button>
+                        </div>
+                        <input id="amountToBasket_[{$testid}]" type="text" name="am" value="[{d3_oqm_getminamount product=$product}]"
+                               data-min="[{d3_oqm_getminamount product=$product}]"
+                                [{if !empty($product->oxarticles__d3oqm_maximum->value)}]
+                                    data-max="[{$product->oxarticles__d3oqm_maximum->value}]"
+                                [{/if}]
+
+                                [{if !empty($product->oxarticles__d3oqm_package->value)}]
+                                    data-step="[{$product->oxarticles__d3oqm_package->value}]"
+                                [{elseif $config->getConfigParam('blAllowUnevenAmounts')}]
+                                    data-step="any"
+                                [{/if}]
+                               size="3" autocomplete="off" class="form-control amount">
+                        <div class="input-group-tweak">
+                            <button class="btn btn-primary" id="d3OqmPlus_[{$testid}]"
+                                    data-target="amountToBasket_[{$testid}]" data-type="+">+
+                            </button>
+                        </div>
+                        <span class="input-group-append">
+                            <button id="toBasket_[{$testid}]" type="submit" aria-label="[{oxmultilang ident="TO_CART"}]" class="btn btn-primary hasTooltip" title="[{oxmultilang ident="TO_CART"}]" data-container="body">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                            [{if $removeFunction && (($owishid && ($owishid==$oxcmp_user->oxuser__oxid->value)) || (($wishid==$oxcmp_user->oxuser__oxid->value)) || $recommid)}]
+                                <button triggerForm="remove_[{$removeFunction}][{$testid}]" type="submit" class="btn btn-danger removeButton hasTooltip" title="[{oxmultilang ident="REMOVE"}]">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            [{/if}]
+                        </span>
+                    </div>
+                </div>
+            [{/oxhasrights}]
+        [{else}]
+            [{$smarty.block.parent}]
+        [{/if}]
     [{/if}]
     [{capture name="doNotShow"}]
         <script type="text/javascript">

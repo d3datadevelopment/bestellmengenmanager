@@ -52,20 +52,11 @@
         </tr>
         <tr>
             <td class="edittext ext_edittext" colspan="2">
-                <input type="hidden" name="value[d3_cfg_mod__showBasketInfoFlowTable]" value="0">
-                <input type="checkbox" name="value[d3_cfg_mod__showBasketInfoFlowTable]" value="1"
-                       [{if $edit->getValue('showBasketInfoFlowTable')}]checked[{/if}]>
-                [{oxmultilang ident="D3OQM_SHOWBASKETINFOFLOWTABLE"}]
-                [{oxinputhelp ident="HELP_D3OQM_SHOWBASKETINFOFLOWTABLE"}]
-            </td>
-        </tr>
-        <tr>
-            <td class="edittext ext_edittext" colspan="2">
-                <input type="hidden" name="value[d3_cfg_mod__showBasketInfoFlowList]" value="0">
-                <input type="checkbox" name="value[d3_cfg_mod__showBasketInfoFlowList]" value="1"
-                       [{if $edit->getValue('showBasketInfoFlowList')}]checked[{/if}]>
-                [{oxmultilang ident="D3OQM_SHOWBASKETINFOFLOWLIST"}]
-                [{oxinputhelp ident="HELP_D3OQM_SHOWBASKETINFOFLOWLIST"}]
+                <input type="hidden" name="value[d3_cfg_mod__showBasketInfo]" value="0">
+                <input type="checkbox" name="value[d3_cfg_mod__showBasketInfo]" value="1"
+                       [{if $edit->getValue('showBasketInfo')}]checked[{/if}]>
+                [{oxmultilang ident="D3OQM_SHOWBASKETINFO"}]
+                [{oxinputhelp ident="HELP_D3OQM_SHOWBASKETINFO"}]
             </td>
         </tr>
         <tr>

@@ -1,0 +1,29 @@
+From a5202142c4257241692d762a4ae4f0a3b86f1e5b Mon Sep 17 00:00:00 2001
+From: Daniel Seifert <ds@shopmodule.com>
+Date: Thu, 11 Jun 2020 16:16:20 +0200
+Subject: [PATCH] add OQM changes to wave theme files
+
+---
+ tpl/page/compare/inc/compareitem.tpl | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/tpl/page/compare/inc/compareitem.tpl b/tpl/page/compare/inc/compareitem.tpl
+index ed73b425..c6e72789 100644
+--- a/tpl/page/compare/inc/compareitem.tpl
++++ b/tpl/page/compare/inc/compareitem.tpl
+@@ -90,7 +90,11 @@
+                 [{if $blShowToBasket}]
+                     [{oxhasrights ident="TOBASKET"}]
+                         <div class="input-group">
+-                            <input type="text" name="am" value="1" size="3" autocomplete="off" class="form-control" title="[{oxmultilang ident="QUANTITY"}]">
++                            [{* D3 MOD OQM START CHANGED *}]
++                            [{block name="d3oqm_wave_page_compare_inc_compareitem_amount"}]
++                                <input type="text" name="am" value="1" size="3" autocomplete="off" class="form-control" title="[{oxmultilang ident="QUANTITY"}]">
++                            [{/block}]
++                            [{* D3 MOD OQM END CHANGED *}]
+                             <span class="input-group-append">
+                                 <button type="submit" class="btn btn-primary hasTooltip" title="[{oxmultilang ident="TO_CART"}]">
+                                     <i class="fa fa-shopping-cart"></i>
+-- 
+2.26.1.windows.1
+

@@ -1,49 +1,25 @@
-<?php //006f4
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Bestellmengenmanager @version 5.0.3.0 PHP56 (08.05.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-HR+cPnyEBfmmtvBJpSExlq4hhyBKlG/89HU4uPUu6jV2UH2sdrX5A2jsq4ybHhYn9ygr9xd0UDF4
-AzJF9mYojMJm8Erq2al1z20J5MM0I3OJJt3GlSNbxt1ItBf3mG7sVwsSD3asGm6SdTVz2sjwITB4
-xfzzml7cGjV2oFUZ6nfcyO/pk9knpNFRKBgXoIkMmAjq+D4TxOmPy3qsuJbp5yxQ9f5PSsmHJDVb
-KIJaPCFyTsD827CI/rNCfK/DOr6V254C+eIXGFiAGC2yuoyNp0bYte9LFKHiAh3AI48luTOxwuO7
-7pPF/psaywIhlCigVswpkgiXW0IqokNQpG8nzahbBd7CO1Hhxtb/1R9aOdTOOEcd846mgLz03gyW
-3p7Q8L8e3CjveRp4nyYxCzi2/sWQeXdAxsAioMpRIK88Tah/ywQ86eIVIBrlU9ThQY+TJB95aHaJ
-1G7B87TU6KqPEcRp4av9HGaBOl0Qwc8A7YKAqoGqHAppENlMcPqYzXOw+IjF2x0DcfUHr1IBRIso
-2rcF6ypfxNFqpwmBJS/y7Aiq7EwoFoDcLY6ecZtrFKINBaWu8pkeWz+1L1vOMkzB/lvTslgO8Sui
-cKEsztiMTImxI9GayDIDf48CNbmIwyPz0TdgIFv5Y21mqLPDWZ5U6Kv6vVdPo9vc8DI0B1BWDluS
-WsKoAU3PEZ+qmsflOjXNhcIsvbqVDZNaE1hsxpiplJend9CGlLHcPoY+KIcPaa/mmVRfKCX8Z9Nc
-k63NnOJPWaNiLnjso80jKCfWzNXKbWOHChP7Hxj6eO0m4uuHDX0ssR9ovtlW/ydLlIJJYwvQ/sP+
-SKsLdEp+PKpygKYQPVcsEmItc7uE87YtY/9NJrq7orAB9IcIDSeMoA/pdddmcsbSqcbuMuBKP2/7
-j1gJGDtmej8UT4N2Ak22akS0QiBUUeatbBdyufU0oJONOokAB+gC88omJAfUsDwMjc9mMqx+U7hL
-ylwfLe8MMoSpjZj9rVKc0XmgzEdU7OpMHB8LAGQJ7vYJhXZL6gVC4raqXSL/SiARlWgRz6PaGFXQ
-3rbEvMPqvOWDBNgVItE0u4Lve4zSB88MoWVp4P193nSCnraPucnye7SPSXtKgxq6Wk8YYse2bzC+
-TeOFBKRFkKlrm4QmC01zVCqif3O68/LxXutB3hXTYzOt8fu2xPGh6qr4oeQbHIAs8f1LPitVpqjs
-OHSJe/EOrysdBrsALVv8N2y/d2bX7ZTUKwq0M7y6NyhqmO6Am6Gx5fdgsvhJakzJS+mast0BSNf/
-OHQSyJUDVLvKx0lGghc0uvdMBStE2xDFcsgR2hT1QCa9iZj3hnFhtJrEKBtwm7tdzRweViplteL/
-/+YQlYkpwwB+BnnHmseJ+vz/MubZaDS/bszRz5kacsuxwodXWzaAmu7W6e65yAlSCkxzLtZtWb2o
-cVDrphBSIZk8Zl9rGEpdPL9kPRv0i4D3xz0EVfQ1z14P9bianJH9h5pbGkIx5jLuAsbUvMxQS6oT
-gLvDpxAabTepHXxIknUJJ6kiofkLJIvjjDpogA5iBfuQ0WAmueG3lxcBGZXlgGA69wTwk3ZobjOq
-eRY4M8WKJzFPxvgE1jkmhQVXps5VhENEcXmNgw/tHHLwiJiOZQSPDVuvqESOaZ0+nQOrunnzDfiI
-9xho/AH+VuM5wtxd1B6Ra4TIS3uMaaQr5TfjTyIW3DpQwdmkuWxBgmN9nPu4JkWku0bYnTxpXhc9
-ujAt3j6vaaQqDDcurNOTifknIGPIzaD2ybP/N689xQZPq/u0lUEV4SetUY2TkZNMmKHSwj7vnFyK
-cQI9nBeh+OJ8M7QKYf3nDX5V4uyMRjQ7vu/oCr8wy9a26Jb5HNy1nZTOuLV49HRnoqkVadDV9C+T
-O8fnVHGQ3x0u+C0uA6adAhkoK72y6FdLeiwEP5khvfjuhrD0FRf2LJFuiJX9d5a+CBeU8bA433uW
-ux18t6FgDfqjhmTEsdbaHgu03r5oiolAHl0TDrqsiJzRtoJXeSwo6d4XfOJs72NtSxqQDl/H1re4
-FbuENCaj1m8P8DpUASugja5DoXiimoMvtUdIz+fS30itpEDrzWD7nBG7SQ+bKearho46dGrJnxHa
-jmjgYCyG/RxzFpT5qBzZ8u9viqXamIGa/tX4VB++3Uyf48/HG7yX7VKclZbAzNtEiFYGH911nTX3
-wnCcull2eN8Wi5THKDvtCZXIwR8iVw/hl7p+x6jwHwmD+nj7lkuK/sJ7B1cfYAP2K7HVe7GQxokB
-IRhSOYZqgcv83SPa9Atqmc50ITrKh3aQgpgO3V4ocrDiIsSvOprtDk4gSHxzKkGJ0JYGThVG2tc0
-Mz/ofr2VimkjQxHfiKZVrsqDkFQgE4U983g1FlJCjRPkvcsgUsFBSNVFEH+mbY6JCqd8/1bXZhpJ
-ateaI+dwBTQFtP51l6KfzVPuCE1DWZkK0IwSjO80ZR+O44qMJbiiLkXtCrzl7/Q6Q7bDilr1XIPd
-k67ycK6OklEuXH0Z8ZQ4nMk106FKSxSF6r2eC7juKDneQynnYT1BxSoyceWqV7wJr03K1NSUbVAD
-jZgHnq6sQYQYkRWaYtQnqP13aXLwFaqfK7FMFoCFJZao+UTiEbn5VnMpzYnQs6Fack/GVODL1mRD
-0hlmG8xjrfMclyXIgX0ZR+Zk3kDPYHfyWg2JQl8qWroTkMngtB3IKejn4Hf+DKH1KIQ4A0Y+V/nU
-Wy+TP0UAP4Dz8TfY7S8AAjqgtmbBe2Rkfwi3qCq3fPtfsQouLjt32Zx/Iqn7hKHihq+6dA0vCFQc
-Hrxxc/561obYRz6BkI+qil0tYaNDwgPjtuR4x7m+7RJvcwsXMo7kX3vZZAfdi29AMVgsj6aiIzv8
-kemZ500fxaJwnGdan3y9NebvdXHNUqV9FHCdzEbJ7wvWRpNIaSauyP0uiOrHEri9tW9tlZXwRMim
-DXRew8LW7oH7538K+pzTg/vTDj9MPQOAdDLcIvRv/bZXvIbe0mq+ly+IcXoQr/nP7iAY3I3ScbKj
-ltcUcYakPdZmVEHchX+nRTYiJ1TjZ1zdedZHxxw056fA+UIHJa3lDG61smKAWHEVxPo65dUW0EpH
-i5+hgTnQKMAmUCHSadsiEuYopLSLM7kMRt3WByQUwuOr0/kS00C1gzX6eErsr8ew2xEAGpANFyfA
-11OWPPSOhjKRYlEIaoGcblKa9SwGSHGbtNkAQSd4Ut4D8xKBtsOzvN15xa47Y5P/0y1q8sw3xg8k
-CjisRFUjnQWUd8An5vf8omjXDdI8Sias2pJ0nTa/NzbAB4tU7cnbAh/e5IkFi2Yho73N/8okhKSr
-1prUCRi2EyxYL9G8KZycmVorj3UYN+7lgLVX/JQXxulTQQZtR6HB
+<?php
+$sLangName = "English";
+
+$aLang = array(
+    'charset'                          => 'UTF-8',
+
+    'D3_D3OQM_BASKET_NOTPOSSIBLE_RULE' => 'This article could not be added to cart. Please check your input!!',
+    'D3OQM_ERROR_HEADLINE'             => 'Not available quantity',
+    'D3OQM_ERROR_MSG'                  => 'The article was not added to cart!',
+    'D3OQM_CHANGE_MSG'                 => 'We have added for you the quantity of ',
+    'D3OQM_CHANGE_MSG_END'             => ' added.<br> The total quantity in cart is thus: ',
+    'D3OQM_PRE_MSG'                    => 'You have entered',
+    'D3OQM_PRE_MSG_END'                => '.',
+    'D3OQM_MSG_GENERAL1'               => 'pcs',
+    'D3OQM_MSG_GENERAL2'               => ')',
+    'D3OQM_ARTNUM'                     => 'productnumber.:',
+    'D3OQM_DRIFT_DESC1'                => 'The following conditions for the article <strong>%1</strong> (Art.Nr.: <strong>%2</strong>) have not been fulfilled:',
+    'D3OQM_MINIMUM_DESC'               => 'the smallest order quantity is %1',
+    'D3OQM_MSG_MINIMUM'                => '(minimum quantity: ',
+    'D3OQM_PACKAGE_DESC'               => 'the article can only be ordered in quantities of %1 or a multiple thereof.',
+    'D3OQM_MSG_PACKAGE'                => '(packing unit: ',
+    'D3OQM_MAXIMUM_DESC'               => 'the maximum order quantity is %1',
+    'D3OQM_MSG_MAXIMUM'                => '(maximum order quantity: ',
+);
+

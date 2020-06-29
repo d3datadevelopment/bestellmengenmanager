@@ -1,165 +1,86 @@
-<?php //006f4
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Bestellmengenmanager @version 5.0.3.0 PHP56 (08.05.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-Pgv8RHBLTaDMQKZYmWsySfeHeI9D8Fm=
+<?php
+
+$sLangName = "Deutsch";
+if (class_exists(D3\ModCfg\Application\Model\d3utils::class)) {
+    $sLogo = \D3\ModCfg\Application\Model\d3utils::getInstance()->getD3Logo();
+    $sLogo = str_replace('"', '\'', $sLogo);
+} else {
+    $sLogo = 'D&sup3;';
+}
+
+$aLang = array(
+    'charset' => 'UTF-8',
+
+    'd3oqm'                                 => 'Bestellmengenmanager',
+    'd3smoqm_settings'                      => 'Einstellungen',
+    'd3taboqm_settings'                     => 'Grundeinstellungen',
+    'd3taboqm_support'                      => 'Support',
+    'D3OQM_ACTIVE'                          => 'Aktiv?',
+    'D3OQM_LOGLEVEL'                        => 'Logging',
+    //    'HELP_D3OQM_LOGLEVEL'                       => 'Bestellgrenze',
+    'D3OQM_LIMITTYPE'                       => 'Bestellgrenze',
+    'D3OQM_LIMITTYPE_VE'                    => 'Verpackungseinheit',
+    'D3OQM_LIMITTYPE_MIN'                   => 'Mindestmenge',
+    'D3OQM_LIMITTYPE_NO'                    => 'keine Begrenzung',
+    'D3OQM_LIMITTYPE_MAX'                   => 'Maximalmenge',
+    'D3OQM_TITLE'                           => $sLogo . ' Bestellmengen Manager',
+    'D3OQM_PLAIN_TITLE'                     => 'D3 Bestellmengen Manager',
+    'D3OQM_RULES'                           => 'Allgemeine Regeln & Tipps:',
+    'HELP_D3OQM_RULES'                      => '<h3>Allgemeine Regeln & Tipps</h3>'
+        . 'Die eingegebenen Bestellmengen reagieren aufeinander. D.h. das Modul versucht die Bestellmengen zu verifizieren (Plausibilit&auml;tspr&uuml;fung).<br>'
+        . 'Hier ein paar Regeln und Tipps, wie man die gr&ouml;bsten Fehler aus dem Weg gehen kann:'
+        . '<ul>'
+        . ' <li>unsinnige Mengen sollten vermieden werden <br>(bspw. minimale Menge gr&ouml;&szlig;er als maximal Menge)</li>'
+        . ' <li>fehleranf&auml;llige Mengen sollten ebenfalls vermieden werden <br>'
+        . '(bspw. die minimale Menge sollte mindestens die Verpackungseinheit sein oder ein vielfaches davon )</li>'
+        // Beispiele auffuehren
+        . '</ul>',
+    'D3OQM_INHERITANCE'                     => 'Regeln zur Vererbung (Variantenartikel):',
+    'HELP_D3OQM_INHERITANCE'                => '<h3>Regeln zur Vererbung (Variantenartikel)</h3>'
+        . 'Die Bestellmengen werden automatisch vererbt. Folgende Logik wird hier angewandt:<br>'
+        . '<ul>'
+        . ' <li>'
+        . '  F&uuml;r Elternartikel und allgemein gilt:'
+        . '  <ul>'
+        . '   <li>m&ouml;gliche Werte sind dezimale Zahlen [0-9] und Leerzeichen (bspw. Leertaste, keine Eingabe) </li>'
+        . '   <li>Zahlen (Wertebereich [0-9]) werden an die Varianten vererbt</li>'
+        . '   <li>bei Leerzeichen wird die Option deaktiviert, anders wie bei der Zahl 0. Die Zahl 0 wird bei Varianten'
+        . ' relevant (siehe n&auml;chsten Vererbung).</li>'
+        . '  </ul>'
+        . ' </li>'
+        . ' <li>'
+        . '  F&uuml;r Variantenartikel (Vererbung) gilt:'
+        . '  <ul>'
+        . '   <li>Zahlen gr&ouml;&szlig;er 0 &uuml;berschreibt die vererbte Menge <br>'
+        . '(Elternart. minimale Menge = 10, Variante minimale Menge = 20, bedeutet dass die Variante eine minimale Bestellmenge von 20 hat)</li>'
+        . '   <li>0 deaktiviert die vererbte Menge<br>(Elternart. minimale Menge = 10, Variante minimale Menge = 0, bedeutet dass die Variante keine minimale Bestellmenge hat)</li>'
+        . '   <li>Leerzeichen oder keine Eingabe stellt die Vererbung wieder her</li>'
+        . '  </ul>'
+        . ' </li>'
+        . '</ul>',
+
+    /*article_list*/
+    'GENERAL_ARTICLE_D3OQM_MINIMUM'         => 'D3 min. Bestellmenge',
+    'GENERAL_ARTICLE_D3OQM_MAXIMUM'         => 'D3 max. Bestellmenge',
+    'GENERAL_ARTICLE_D3OQM_PACKAGE'         => 'D3 Verpackungseinheit',
+
+    /*Einstellungen*/
+    'D3OQM_ROUNDEDAMOUNT'                   => 'Soll bei unzureichenden Bestellmengen eine korrigierte'
+        . ' Menge in den Warenkorb gelegt werden?',
+    'D3OQM_MATHROUND'                       => 'Soll mathematisch gerundet werden? (Inaktiv: es wird immer aufgerundet)',
+    'D3OQM_INFO'                            => 'Wenn bei unzureichenden Bestellmengen die aufgerundete Anzahl in den Warenkorb gelegt'
+        . ' werden soll,<br> dann k&ouml;nnen Sie dies hier bestimmen. <br>'
+        . '<sup>(Bei &Auml;nderungen m&uuml;ssen ggf. die Cookies geleert werden.)</sup><br><br>',
+    'D3OQM_USEREMAININGSTOCK'               => 'Soll die Restmenge genutzt werden?',
+    'HELP_D3OQM_USEREMAININGSTOCK'          => 'Aktiv: Sobald der Lagerstand des Artikels unter der Verpackungseinheit oder der Mindestmenge liegt, werden alle 3 Optionen im Frontend auf den Lagerbestand angepasst.<br><br>'
+        . 'Bspw: Der Artikel hat einen Lagerbestand von 7,<br> eine bestellbare Mindestmenge von 10,<br> eine bestellbare Maximalmenge von 50 <br> und eine Verpackungseinheit von 5.<br>'
+        . 'Im Frontend wird der Artikel mit den folgenden Werten angeboten. (alle Werte wurden auf den restlichen Lagerbestand gesetzt): '
+        . '<ul><li>Mindestmenge: 7</li>'
+        . '<li>Maximalmenge: 7</li>'
+        . '<li>Verpackungseinheit: 7</li></ul>'
+        . '<br>Diese Option ist abhängig von der aktiven Shopeinstellung "Lagerverwaltung aktiv" sowie am Artikel hinterlegten "Lieferstatus" und "Lagerbestand.',
+    'D3OQM_SHOWBASKETINFO'          => 'Sollen die Bestellmengen im Warenkorb angezeigt werden?',
+    'HELP_D3OQM_SHOWBASKETINFO'     => 'Aktiv: die Bestellmengen eines konfigurierten Artikels werden im Bestellschritt 1 Warenkorbübersicht angezeigt.',
+    // Installation
+    'D3OQM_INSTALLATION_OLDSMARTYFILEFOUND' => 'Es wurde eine alte Smarty Datei gefunden. Bitte löschen Sie folgende Datei:',
+);

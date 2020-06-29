@@ -14,6 +14,7 @@ title: Systemanforderungen
 * Themes
     * azure
     * flow
+    * wave
 * D3 Modul-Connector ([kostenfrei bei D3 erhältlich](https://www.oxidmodule.com/connector/)) ab Version 5.3.0.0 
 * Installation via [Composer](https://getcomposer.org)
 

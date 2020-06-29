@@ -1,51 +1,25 @@
-<?php //006f4
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Bestellmengenmanager @version 5.0.3.0 PHP56 (08.05.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-72ut0d55h1oh0DO=
+<?php
+$sLangName = "Deutsch";
+
+$aLang = array(
+    'charset'                          => 'UTF-8',
+
+    'D3_D3OQM_BASKET_NOTPOSSIBLE_RULE' => 'Der Artikel konnte nicht in den Warenkorb gelegt werden. Bitte &uuml;berpr&uuml;fen Sie Ihre Eingabe!',
+    'D3OQM_ERROR_HEADLINE'             => 'Nicht bestellbare Menge',
+    'D3OQM_ERROR_MSG'                  => 'Der Artikel wurde nicht in den Warenkorb gelegt!',
+    'D3OQM_CHANGE_MSG'                 => 'Wir haben f&uuml;r Sie die Menge von ',
+    'D3OQM_CHANGE_MSG_END'             => ' hinzugef&uuml;gt.<br> Die Gesamtmenge im Warenkorb betr&auml;gt damit: ',
+    'D3OQM_PRE_MSG'                    => 'Sie haben',
+    'D3OQM_PRE_MSG_END'                => 'eingegeben.',
+    'D3OQM_MSG_GENERAL1'               => 'St&uuml;ck',
+    'D3OQM_MSG_GENERAL2'               => ')',
+    'D3OQM_ARTNUM'                     => 'ArtNr.:',
+    'D3OQM_DRIFT_DESC1'                => 'Folgende Bedingung wurden f&uuml;r den Artikel <strong>%1</strong> (Art.Nr.: <strong>%2</strong>) nicht erf&uuml;llt:',
+    'D3OQM_MINIMUM_DESC'               => 'kleinste Bestellmenge liegt bei %1',
+    'D3OQM_MSG_MINIMUM'                => '(Mindestbestellmenge: ',
+    'D3OQM_PACKAGE_DESC'               => 'der Artikel kann nur in Mengen von jeweils %1 oder einem Vielfachen davon bestellt werden.',
+    'D3OQM_MSG_PACKAGE'                => '(Verpackungseinheit: ',
+    'D3OQM_MAXIMUM_DESC'               => 'die maximale Bestellmenge liegt bei %1',
+    'D3OQM_MSG_MAXIMUM'                => '(Maximale Bestellmenge: ',
+);
+

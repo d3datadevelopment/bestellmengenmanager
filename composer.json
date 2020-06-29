@@ -16,7 +16,7 @@
     {
         "name": "D3 Data Development (Inh. Thomas Dartsch)",
         "email": "info@shopmodule.com",
-        "homepage": "http://www.d3data.de",
+        "homepage": "https://www.d3data.de",
         "role": "Owner"
     }
   ],
@@ -34,10 +34,13 @@
     },
     "patches": {
       "oxid-esales/azure-theme": {
-        "add OQM changes to azure theme files - 2020-02-17": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c23a0c35cd4ba1acc75f7b678f57e53e9aa7242a/azure_theme_142.patch"
+        "add OQM changes to azure theme files - 2020-02-17": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c1075dc3dba0592c34eb5d30989871374e8d7210/azure_theme_142.patch"
       },
       "oxid-esales/flow-theme": {
-        "add OQM changes to flow theme files - 2020-02-17": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c23a0c35cd4ba1acc75f7b678f57e53e9aa7242a/flow_theme_330.patch"
+        "add OQM changes to flow theme files - 2020-02-17": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c1075dc3dba0592c34eb5d30989871374e8d7210/flow_theme_330.patch"
+      },
+      "oxid-esales/wave-theme": {
+        "add OQM changes to wave theme files - 2020-06-11": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c1075dc3dba0592c34eb5d30989871374e8d7210/wave_theme_131.patch"
       }
     }
   },
