@@ -2,15 +2,13 @@
 title: Modul zur Installation hinzufügen
 ---
 
-Für das Modul **{$modulname}** sind Anpassungen an den originalen Dateien des Shops nötig. Die Änderungen werden automatisiert als Patches eingespielt. Um diese Patches integrieren zu können, ist es nötig, in der `composer.json`-Datei des Shopprojektes Folgendes einmalig einzufügen:
+Für das Modul **{$modulename}** sind Anpassungen an den originalen Dateien des Shops nötig. Die Änderungen werden automatisiert als Patches eingespielt. Um diese Patches integrieren zu können, ist es nötig, in der `composer.json`-Datei des Shopprojektes das Anwenden der Patches zu erlauben.
 
-```
-"extra": {
-    "enable-patching": true
-}
-```
+Führen Sie dann in der Konsole im Hauptverzeichnis Ihres Shops (oberhalb des `source`- und `vendor`-Verzeichnisses) diesen Befehl aus:
 
-Existiert der `Extra`-Bereich schon, fügen Sie den Inhalt dort ein.
+```bash
+php composer config extra.enable-patching true
+```
 
 Führen Sie dann in der Konsole im Hauptverzeichnis Ihres Shops (oberhalb des `source`- und `vendor`-Verzeichnisses) diesen Befehl aus, um das Modul **{$modulename}** zur Installation hinzuzufügen:
 
