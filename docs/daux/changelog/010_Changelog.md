@@ -2,6 +2,16 @@
 title: Changelog
 ---
 
+## 5.0.4.1 - (2020-12-01)
+### Added
+- Freigabe für OXID 6.2.3
+
+### Changed
+- Dokumentation angepasst
+- Templatecode überarbeitet
+
+---
+
 ## 5.0.4.0 - (2020-06-29)
 0000000: add wave theme support
 0000000: unused option removed

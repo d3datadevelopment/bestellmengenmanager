@@ -37,17 +37,20 @@ class d3_oxarticle_oqm extends d3_oxarticle_oqm_parent
         startProfile(__METHOD__);
         $oD3CfgMod = d3_cfg_mod::get(d3_d3oqm_model_handler::D3OQMMODID);
 
+        $assign = [];
         if ($oD3CfgMod && $oD3CfgMod->isActive()) {
             foreach ($this->_aFieldNames as $sName => $sVal) {
-                $sLongName = $this->_getFieldLongName($sName);
                 // we work with values 0 and NULL in the database. We have to react on these values.
                 // We convert empty strings and false values to NULL
                 // all fields with 'd3oqm' are affected
-                if (stripos($sLongName, 'd3oqm') !== false && trim($this->$sLongName->value) == '') {
-                    $this->$sLongName->value = null;
+                if (stripos($sName, 'd3oqm') !== false && trim($this->getFieldData($sName)) == '') {
+                    $assign[$sName] = null;
                 }
             }
         }
+
+        $this->assign($assign);
+
         stopProfile(__METHOD__);
 
         return parent::save();

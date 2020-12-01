@@ -4,17 +4,14 @@ use D3\ModCfg\Application\Model\d3utils;
 use D3\ModCfg\Application\Model\Install\d3install;
 
 $sMetadataVersion = '1.2';
-if (class_exists(D3\ModCfg\Application\Model\d3utils::class)) {
-    $sLogo = D3\ModCfg\Application\Model\d3utils::getInstance()->getD3Logo();
-} else {
-    $sLogo = 'D&sup3;';
-}
 
 $sModuleId = 'd3oqm';
 
 $aModule = array(
     'id'             => $sModuleId,
-    'title'          => $sLogo . ' Bestellmengenmanager',
+    'title'          => 
+        '<svg style="height:1em;width:1em"><image xlink:href="https://logos.oxidmodule.com/d3logo.svg" style="height:1em;width:1em" /></svg> '.
+        'Bestellmengenmanager',
     'description'    => 'Legen Sie fest, in welchen Mengen bzw. Packungsgr&ouml;&szlig;en Sie ihre Produkte abgeben.' //
         . 'Der Kunde wird bei unpassender Mengenangabe informiert.' //
         . 'Optional wird die korrigierte Menge in den Warenkorb gelegt.' //
@@ -22,7 +19,7 @@ $aModule = array(
         . 'Wenn das Modul &uuml;ber den Shop aktiviert wurde, muss danach unter:</br>' //
         . '<strong>/D&sup3; Module/Modul-Connector/Modulverwaltung/</strong> das Modul aktiviert werden.',
     'thumbnail'      => 'picture.png',
-    'version'        => '5.0.4.0',
+    'version'        => '5.0.4.1',
     'author'         => 'D&sup3; Data Development',
     'email'          => 'support@shopmodule.com',
     'url'            => 'http://www.oxidmodule.com/',
