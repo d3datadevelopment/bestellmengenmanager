@@ -1,94 +1,165 @@
-<?php //006f4
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Bestellmengenmanager @version 5.0.3.0 PHP71 (08.05.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-eJA5AkuQPWxX4owA5imsG04dMBk05niofLXii5m=
+<?php
+
+use D3\ModCfg\Application\Model\Configuration\d3_cfg_mod;
+use OxidEsales\Eshop\Core\Module\Module;
+use OxidEsales\Eshop\Core\Registry;
+
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * http://www.shopmodule.com
+ *
+ * @package orderQuantityManager
+ * @name d3_oxbasket_oqm
+ */
+class d3_oxbasket_oqm extends d3_oxbasket_oqm_parent
+{
+    /**
+     * Session based message handler
+     *
+     * @var array
+     */
+    protected $_aD3OQMDrifts = array();
+
+    /**
+     * Adds user item to basket. Returns oxbasketitem object if adding succeded
+     *
+     * @param string $sProductID       id of product
+     * @param float  $sAmount          product amount
+     * @param array  $aSel             product select lists (default null)
+     * @param array  $aPersParam       product persistent parameters (default null)
+     * @param bool   $blOverride       marker to acumulate passed amount or renew (default false)
+     * @param bool   $blBundle         marker if product is bundle or not (default false)
+     * @param string $sOldBasketItemId id if old basket item if to change it
+     *
+     * @return object
+     *
+     * @throws \OxidEsales\Eshop\Core\Exception\OutOfStockException
+     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
+     * @throws \OxidEsales\Eshop\Core\Exception\ArticleInputException
+     * @throws \OxidEsales\Eshop\Core\Exception\NoArticleException
+     * @throws \OxidEsales\Eshop\Core\Exception\ObjectException
+     * @throws object
+     */
+    public function addToBasket(
+        $sProductID,
+        $sAmount,
+        $aSel = null,
+        $aPersParam = null,
+        $blOverride = false,
+        $blBundle = false,
+        $sOldBasketItemId = null
+    ) {
+
+        $oD3CfgMod = d3_cfg_mod::get(d3_d3oqm_model_handler::D3OQMMODID);
+        /** @var Module $oModule */
+        $oModule = oxNew(Module::class);
+
+
+        //is module inactive or amount is zero or article is bundle article
+        if (false == $oD3CfgMod
+            || false == $oD3CfgMod->isActive()
+            || false == $oModule->load(d3_d3oqm_model_handler::D3OQMMODID)
+            || false == $oModule->isActive()
+            || empty($sAmount)
+            || $blBundle != false
+        ) {
+
+            return parent::addToBasket(
+                $sProductID,
+                $sAmount,
+                $aSel,
+                $aPersParam,
+                $blOverride,
+                $blBundle,
+                $sOldBasketItemId
+            );
+        }
+        startProfile(__METHOD__);
+
+        $sNewAmount = $sAmount;
+        $dAmount    = d3_d3oqm_model_handler::convertStrToFloat($sAmount);
+        $dOldAmount = 0;
+        $sBasketId  = $this->getItemKey($sProductID, $aSel, $aPersParam, $blBundle);
+
+        //get Article and load it
+        /** @var $oArticle d3_oxarticle_oqm */
+        $oArticle = oxNew('oxarticle');
+        if ($oArticle->load($sProductID)) {
+            $oD3OQMHandler = d3_d3oqm_model_handler::getInstance();
+            $oD3OQMHandler->setCurrentArticle($oArticle);
+
+            // get old amount from basket
+            if ($oArticle->hasD3OQMAvailableOptions()) {
+                if ($aBasketItems = $this->getContents()) {
+                    /** @var $oBasketItem \OxidEsales\Eshop\Application\Model\BasketItem */
+                    if ($oBasketItem = $aBasketItems[$sBasketId]) {
+                        $dOldAmount = $oBasketItem->getAmount();
+                    }
+                }
+
+                $aConstellation = array(
+                    'dAddedAmount'     => $dAmount,
+                    'dOldAmount'       => $dOldAmount,
+                    'basketId'         => $sBasketId,
+                    'aSel'             => $aSel,
+                    'aPersParam'       => $aPersParam,
+                    'blOverride'       => $blOverride,
+                    'blBundle'         => $blBundle,
+                    'sOldBasketItemId' => $sOldBasketItemId,
+
+                );
+
+                $blOldOverRide = $blOverride;
+
+                $sNewAmount = $oD3OQMHandler->validateAmount($aConstellation);
+                $blOverride = true;
+
+                if ($sNewAmount > 0 && false == $blOldOverRide && $dOldAmount != $sNewAmount) {
+                    Registry::getSession()->setVariable('blAddedNewItem', true);
+                }
+
+                $this->_aD3OQMDrifts = d3_d3oqm_model_handler::getInstance()->getDrifts();
+                $this->getSession()->setVariable('_aD3OQMDrifts', serialize($this->_aD3OQMDrifts));
+            }
+        }
+
+        stopProfile(__METHOD__);
+
+        return parent::addToBasket(
+            $sProductID,
+            $sNewAmount,
+            $aSel,
+            $aPersParam,
+            $blOverride,
+            $blBundle,
+            $sOldBasketItemId
+        );
+    }
+
+    /**
+     * Simple Wrapper for the drifts
+     *
+     * @return array
+     */
+    public function getD3OQMDrifts()
+    {
+        return unserialize($this->getSession()->getVariable('_aD3OQMDrifts'));
+    }
+
+    /**
+     * Simple Wrapper for the drifts
+     *
+     */
+    public function resetD3OQMDrifts()
+    {
+        d3_d3oqm_model_handler::getInstance()->resetDrifts();
+        $this->getSession()->deleteVariable('_aD3OQMDrifts');
+    }
+
+}

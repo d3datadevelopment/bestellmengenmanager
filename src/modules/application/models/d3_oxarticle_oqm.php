@@ -1,108 +1,196 @@
-<?php //006f4
-// This Software is the property of D³ Data Development and is protected by copyright law - it is NOT Freeware.  Any unauthorized use of this software without a valid license key is a violation of the license agreement and will be prosecuted by civil and criminal law.  Inhaber: Thomas Dartsch Alle Rechte vorbehalten  @package Bestellmengenmanager @version 5.0.3.0 PHP71 (08.05.2020) @author  Daniel Seifert support@shopmodule.com @copyright (C) 2020, D3 Data Development @see http://www.shopmodule.com
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+use D3\ModCfg\Application\Model\Configuration\d3_cfg_mod;
+use OxidEsales\Eshop\Core\Field;
+
+/**
+ * This Software is the property of Data Development and is protected
+ * by copyright law - it is NOT Freeware.
+ * Any unauthorized use of this software without a valid license
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ * http://www.shopmodule.com
+ *
+ * @package orderQuantityManager
+ * @name d3_oxarticle_oqm
+ */
+class d3_oxarticle_oqm extends d3_oxarticle_oqm_parent
+{
+
+    /**
+     * Extended method of oxarticle::save()
+     * We differ between zero and NULL values.
+     * Empty string will be converted to NULL value.
+     * Zero = 0 will not converted.
+     *
+     * @see oxarticle::save()
+     * @return bool
+     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
+     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     */
+    public function save()
+    {
+        startProfile(__METHOD__);
+        $oD3CfgMod = d3_cfg_mod::get(d3_d3oqm_model_handler::D3OQMMODID);
+
+        $assign = [];
+        if ($oD3CfgMod && $oD3CfgMod->isActive()) {
+            foreach ($this->_aFieldNames as $sName => $sVal) {
+                // we work with values 0 and NULL in the database. We have to react on these values.
+                // We convert empty strings and false values to NULL
+                // all fields with 'd3oqm' are affected
+                if (stripos($sName, 'd3oqm') !== false && trim($this->getFieldData($sName)) == '') {
+                    $assign[$sName] = null;
+                }
+            }
+        }
+
+        $this->assign($assign);
+
+        stopProfile(__METHOD__);
+
+        return parent::save();
+    }
+
+    /**
+     * @param array $aRecord
+     *
+     * @return null|void
+     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
+     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     */
+    public function assign($aRecord)
+    {
+        parent::assign($aRecord);
+
+        if (false == $this->hasD3OQMAvailableOptions()) {
+            return;
+        }
+        startProfile(__METHOD__);
+
+        if (false == $this->isD3OQMRestHandlingActive()) {
+            return;
+        }
+
+        $stock = $this->getFieldData('oxstock'); // 7
+
+        if ($this->getFieldData('d3oqm_minimum') > $stock || $this->getFieldData('d3oqm_package') > $stock) {
+            $this->_setD3RestValue($stock, 'd3oqm_minimum');
+            $this->_setD3RestValue($stock, 'd3oqm_maximum');
+            $this->_setD3RestValue($stock, 'd3oqm_package');
+        }
+
+        stopProfile(__METHOD__);
+    }
+
+    /**
+     * check if this article has avaible options.
+     *
+     * @return bool
+     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
+     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     */
+    public function hasD3OQMAvailableOptions()
+    {
+        $oD3CfgMod = d3_cfg_mod::get(d3_d3oqm_model_handler::D3OQMMODID);
+
+        if (false == $oD3CfgMod || false == $oD3CfgMod->isActive()) {
+            return false;
+        }
+
+        return (bool)count($this->getD3OQMArticleOptions());
+    }
+
+    /**
+     * Returns an array with all available options for this article.
+     *
+     * @return array
+     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
+     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     */
+    public function getD3OQMArticleOptions()
+    {
+        startProfile(__METHOD__);
+        $modId        = d3_d3oqm_model_handler::D3OQMMODID;
+        $aOptionArray = array();
+        $oD3CfgMod    = d3_cfg_mod::get($modId);
+        if (false == $oD3CfgMod || false == $oD3CfgMod->isActive()) {
+            return $aOptionArray;
+        }
+
+        $aTmpOptions = d3_d3oqm_model_handler::getInstance()->getOptionFieldNames();
+
+        foreach ($aTmpOptions as $sOptionName) {
+            $sOptionValue = $this->getFieldData($sOptionName);
+
+            if (false == empty($sOptionValue)) {
+                $aOptionArray[$sOptionName] = $sOptionValue;
+            }
+        }
+        stopProfile(__METHOD__);
+
+        return $aOptionArray;
+    }
+
+    /**
+     * returns the information if the article is ready for the rest handling
+     *
+     *
+     * @return bool
+     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
+     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
+     * @throws \Doctrine\DBAL\DBALException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     */
+    public function isD3OQMRestHandlingActive()
+    {
+        $oD3CfgMod = d3_cfg_mod::get(d3_d3oqm_model_handler::D3OQMMODID);
+        if (false == $oD3CfgMod || false == $oD3CfgMod->isActive()) {
+            return false;
+        }
+
+        if (false == $this->getConfig()->getConfigParam('blUseStock')
+            || $this->isAdmin()
+            || false == $oD3CfgMod->getValue('useRemainingStock')
+        ) {
+            return false;
+        }
+
+        // Fremdlager + Standard kann immer bestellt werden (kein Resthandling notwendig)
+        if (4 == $this->getFieldData('oxstockflag') || 1 == $this->getFieldData('oxstockflag')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @param $stock
+     * @param $sOptionName
+     *
+     */
+    protected function _setD3RestValue($stock, $sOptionName)
+    {
+        $sLongName          = $this->_getFieldLongName($sOptionName);
+        $this->{$sLongName} = oxNew(Field::class, $stock, Field::T_RAW);
+    }
+
+}

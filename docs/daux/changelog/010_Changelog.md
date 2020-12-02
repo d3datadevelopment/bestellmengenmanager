@@ -2,6 +2,22 @@
 title: Changelog
 ---
 
+## 5.0.4.1 - (2020-12-01)
+### Added
+- Freigabe für OXID 6.2.3
+
+### Changed
+- Dokumentation angepasst
+- Templatecode überarbeitet
+
+---
+
+## 5.0.4.0 - (2020-06-29)
+0000000: add wave theme support
+0000000: unused option removed
+
+---
+
 ## 5.0.3.0 - (2020-05-07)
 0000000: module is ported to oxid V6.2 (oxid-ce-package 6.5)
 
@@ -26,7 +42,7 @@ title: Changelog
 0006194: Modulupdate erkennt veraltetete Smarty-Plugin-Dateien nicht
 0006414: Umsetzung der HTML5-Attribute (input > min, max, step) als JavaScript
 0006656: minimale Eingabemenge auf 1 setzen, wenn Artikel bereits im Warenkorb vorhanden
-0006661: Warenkorb anzeigen der Bestellmengen erm�glichen
+0006661: Warenkorb anzeigen der Bestellmengen erm�glichen
 0006662: eigenen Adminbereich erstellen
 0000000: fixed bargain minimun input im flow theme
 

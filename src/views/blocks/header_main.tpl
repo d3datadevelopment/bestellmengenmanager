@@ -3,12 +3,17 @@
 [{d3modcfgcheck modid="d3oqm"}][{/d3modcfgcheck}]
 [{if $mod_d3oqm}]
     [{assign var='d3MappedThemeId' value=$oViewConf->getD3MappedThemeId()}]
-    [{if $d3MappedThemeId === 'flow'}]
+    [{if $d3MappedThemeId === 'flow' || $d3MappedThemeId === 'wave'}]
         [{assign var="aD3OQMDrifts" value=$oxcmp_basket->getD3OQMDrifts()}]
         [{if $aD3OQMDrifts && ($oView->getNewBasketItemMsgType() == 1 || $oView->getNewBasketItemMsgType() == 3)}][{strip}]
             <div id="d3OQMMessage" class="alert alert-warning">
+                [{if $d3MappedThemeId === 'wave'}]
+                    <strong>[{oxmultilang ident="D3OQM_ERROR_HEADLINE"}]</strong>
+                [{/if}]
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <strong>[{oxmultilang ident="D3OQM_ERROR_HEADLINE"}]</strong>
+                [{if $d3MappedThemeId === 'flow'}]
+                    <strong>[{oxmultilang ident="D3OQM_ERROR_HEADLINE"}]</strong>
+                [{/if}]
                 <table class="table table-striped">
                 [{foreach from=$aD3OQMDrifts item="aDrift" key="basketItemId" name="d3OQMDrifts"}]
                     <tr>
@@ -26,7 +31,8 @@
                             [{oxmultilang ident=$aDrift.unitName noerror="1"}]
                         [{/capture}]
                         [{assign var='sUnitName' value=$smarty.capture.CaptureUnitName}]
-
+                        </td>
+                        <td>
                         &nbsp;[{oxmultilang ident="D3OQM_PRE_MSG"}]
                         &nbsp;<strong>[{$aDrift.wantedAmount}]</strong>[{$sUnitName}]
                         &nbsp;[{oxmultilang ident="D3OQM_PRE_MSG_END"}]&nbsp;
