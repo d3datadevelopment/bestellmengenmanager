@@ -2,6 +2,12 @@
 title: Changelog
 ---
 
+## 5.0.4.2 - (2021-02-03)
+### Changed
+- Abhängigkeiten für Composer 2-Nutzung aktualisiert
+
+---
+
 ## 5.0.4.1 - (2020-12-01)
 ### Added
 - Freigabe für OXID 6.2.3
