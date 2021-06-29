@@ -12,11 +12,13 @@
  * @link          http://www.oxidmodule.com
  */
 
+namespace D3\Oqm\Controllers\Admin;
+
 use D3\ModCfg\Application\Controller\Admin\d3_cfg_mod_licence;
 
 /**
  */
-class d3_oqm_controllers_admin_support extends d3_cfg_mod_licence
+class Support extends d3_cfg_mod_licence
 {
 
     /**

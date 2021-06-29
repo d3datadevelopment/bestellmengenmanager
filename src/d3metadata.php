@@ -15,8 +15,11 @@
 /**
  * Module information
  */
+
+use D3\Oqm\Setup\Installroutine;
+
 $aModule = array(
     'd3SetupClasses' => array(
-        'd3_oqm_Setup_InstallRoutine',
+        Installroutine::class
     )
 );

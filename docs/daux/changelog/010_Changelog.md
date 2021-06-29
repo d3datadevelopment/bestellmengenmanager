@@ -2,6 +2,20 @@
 title: Changelog
 ---
 
+## 5.0.4.3 - (2021-06-29)
+### Added
+- Modul verfügbar in OXID 6.2.4 und 6.3.0
+- Namespaces eingefügt
+
+### Changed
+- Hinweise auf Grund unpassender Mengenangaben werden auch bei deaktivierter Warenkorbinfo gezeigt
+
+### Fixed
+- nicht funktionierende Schließen-Funktion bei Modal-Popup korrigiert
+- fehlende Übersetzungen nachgetragen
+
+---
+
 ## 5.0.4.2 - (2021-02-03)
 ### Changed
 - Abhängigkeiten für Composer 2-Nutzung aktualisiert

@@ -11,7 +11,25 @@
  * @author        D3 Data Development <support@shopmodule.com>
  * @link          http://www.oxidmodule.com
  */
-class d3_oxarticle_oqm_parent extends \OxidEsales\Eshop\Application\Model\Article {}
-class d3_oxbasket_oqm_parent extends \OxidEsales\Eshop\Application\Model\Basket {}
-class d3_oxviewconfig_oqm_parent extends \OxidEsales\Eshop\Core\ViewConfig {}
-class d3_oxutilsview_oqm_parent extends \OxidEsales\Eshop\Core\UtilsView {}
+
+namespace D3\Oqm\Modules\Application\Model
+{
+
+    use OxidEsales\Eshop\Application\Model\Article;
+    use OxidEsales\Eshop\Application\Model\Basket;
+
+    class d3_oxarticle_oqm_parent extends Article {}
+
+    class d3_oxbasket_oqm_parent extends Basket {}
+}
+
+namespace D3\Oqm\Modules\Core
+{
+
+    use OxidEsales\Eshop\Core\UtilsView;
+    use OxidEsales\Eshop\Core\ViewConfig;
+
+    class d3_oxviewconfig_oqm_parent extends ViewConfig {}
+
+    class d3_oxutilsview_oqm_parent extends UtilsView {}
+}

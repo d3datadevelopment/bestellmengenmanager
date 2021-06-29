@@ -23,7 +23,7 @@
                     step = step * calcFactor;
                 }
                 if ((isNaN(step) || step === 'any') || step === 0 ) {
-                    step = 1 * calcFactor;
+                    step = calcFactor;
                 }
 
                 if (type === "+") {

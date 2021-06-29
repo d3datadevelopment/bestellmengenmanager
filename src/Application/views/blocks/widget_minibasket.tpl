@@ -71,11 +71,7 @@
                 [{oxscript add='$( \'#'|cat:$_prefix|cat:'d3OQMFlyOut\').show();'}]
             [{/if}]
 
-            [{if $oView->getNewBasketItemMsgType() == 2}]
-                [{oxscript add='$( \'.d3OQMClosePop\' ).click(function(){$(\'#'|cat:$_prefix|cat:'d3OQMFlyOut\').parent().hide();});'}]
-            [{else}]
-                [{oxscript add='$( \'.d3OQMClosePop\' ).click(function(){$(\'#'|cat:$_prefix|cat:'d3OQMFlyOut\').hide();});'}]
-            [{/if}]
+            [{oxscript add='$( \'.d3OQMClosePop\' ).click(function(){$(\'#'|cat:$_prefix|cat:'d3OQMFlyOut\').hide();});'}]
             [{$oxcmp_basket->resetD3OQMDrifts()}]
         [{/strip}][{/if}]
     [{/if}]

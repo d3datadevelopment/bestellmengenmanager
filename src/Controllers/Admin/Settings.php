@@ -12,12 +12,11 @@
  * @link          http://www.oxidmodule.com
  */
 
+namespace D3\Oqm\Controllers\Admin;
 
 use D3\ModCfg\Application\Controller\Admin\d3_cfg_mod_main;
 
-/**
- */
-class d3_oqm_controllers_admin_settings extends d3_cfg_mod_main
+class Settings extends d3_cfg_mod_main
 {
     /**
      * @var string
@@ -45,9 +44,7 @@ class d3_oqm_controllers_admin_settings extends d3_cfg_mod_main
      */
     public function render()
     {
-        $sReturn = parent::render();
-
-        return $sReturn;
+        return parent::render();
     }
 
     /**

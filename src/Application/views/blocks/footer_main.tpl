@@ -7,7 +7,7 @@
     [{if $d3MappedThemeId === 'flow' || $d3MappedThemeId === 'wave'}]
         [{assign var="aD3OQMDrifts" value=$oxcmp_basket->getD3OQMDrifts()}]
 
-        [{if $aD3OQMDrifts && $oView->getNewBasketItemMsgType() == 2}][{strip}]
+        [{if $aD3OQMDrifts && ($oView->getNewBasketItemMsgType() == 2 || $oView->getNewBasketItemMsgType() == 0)}][{strip}]
             <div class="modal fade basketFlyout" id="d3OQMModal" tabindex="1" role="dialog"
                  aria-labelledby="d3OQMModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
