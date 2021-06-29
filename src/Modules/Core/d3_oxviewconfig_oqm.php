@@ -12,7 +12,12 @@
  * @link          http://www.oxidmodule.com
  */
 
+namespace D3\Oqm\Modules\Core;
+
 use D3\ModCfg\Application\Model\Configuration\d3_cfg_mod;
+use Doctrine\DBAL\DBALException;
+use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
+use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
 
 /**
  * class d3_oxViewConfig_d3oqm
@@ -21,9 +26,9 @@ class d3_oxviewconfig_oqm extends d3_oxviewconfig_oqm_parent
 {
     /**
      * @return string
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function getD3MappedThemeId()
     {

@@ -1,8 +1,4 @@
 <?php
-
-use D3\ModCfg\Application\Model\Configuration\d3_cfg_mod;
-use OxidEsales\Eshop\Core\Field;
-
 /**
  * This Software is the property of Data Development and is protected
  * by copyright law - it is NOT Freeware.
@@ -13,6 +9,25 @@ use OxidEsales\Eshop\Core\Field;
  *
  * @package orderQuantityManager
  * @name d3_oxarticle_oqm
+ */
+
+namespace D3\Oqm\Modules\Application\Model;
+
+use D3\ModCfg\Application\Model\Configuration\d3_cfg_mod;
+use D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception;
+use D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException;
+use D3\Oqm\Application\Model\handler;
+use Doctrine\DBAL\DBALException;
+use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
+use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
+use OxidEsales\Eshop\Core\Exception\StandardException;
+use OxidEsales\Eshop\Core\Field;
+use OxidEsales\Eshop\Core\Registry;
+
+/**
+ * Class d3_oxarticle_oqm
+ *
+ * @package D3\Oqm\Modules\Application\Model
  */
 class d3_oxarticle_oqm extends d3_oxarticle_oqm_parent
 {
@@ -25,17 +40,17 @@ class d3_oxarticle_oqm extends d3_oxarticle_oqm_parent
      *
      * @see oxarticle::save()
      * @return bool
-     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
-     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
-     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
      */
     public function save()
     {
         startProfile(__METHOD__);
-        $oD3CfgMod = d3_cfg_mod::get(d3_d3oqm_model_handler::D3OQMMODID);
+        $oD3CfgMod = d3_cfg_mod::get(handler::D3OQMMODID);
 
         $assign = [];
         if ($oD3CfgMod && $oD3CfgMod->isActive()) {
@@ -60,12 +75,12 @@ class d3_oxarticle_oqm extends d3_oxarticle_oqm_parent
      * @param array $aRecord
      *
      * @return null|void
-     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
-     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
-     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
      */
     public function assign($aRecord)
     {
@@ -95,16 +110,16 @@ class d3_oxarticle_oqm extends d3_oxarticle_oqm_parent
      * check if this article has avaible options.
      *
      * @return bool
-     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
-     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
-     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
      */
     public function hasD3OQMAvailableOptions()
     {
-        $oD3CfgMod = d3_cfg_mod::get(d3_d3oqm_model_handler::D3OQMMODID);
+        $oD3CfgMod = d3_cfg_mod::get(handler::D3OQMMODID);
 
         if (false == $oD3CfgMod || false == $oD3CfgMod->isActive()) {
             return false;
@@ -117,24 +132,24 @@ class d3_oxarticle_oqm extends d3_oxarticle_oqm_parent
      * Returns an array with all available options for this article.
      *
      * @return array
-     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
-     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
-     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
      */
     public function getD3OQMArticleOptions()
     {
         startProfile(__METHOD__);
-        $modId        = d3_d3oqm_model_handler::D3OQMMODID;
+        $modId        = handler::D3OQMMODID;
         $aOptionArray = array();
         $oD3CfgMod    = d3_cfg_mod::get($modId);
         if (false == $oD3CfgMod || false == $oD3CfgMod->isActive()) {
             return $aOptionArray;
         }
 
-        $aTmpOptions = d3_d3oqm_model_handler::getInstance()->getOptionFieldNames();
+        $aTmpOptions = handler::getInstance()->getOptionFieldNames();
 
         foreach ($aTmpOptions as $sOptionName) {
             $sOptionValue = $this->getFieldData($sOptionName);
@@ -153,21 +168,21 @@ class d3_oxarticle_oqm extends d3_oxarticle_oqm_parent
      *
      *
      * @return bool
-     * @throws \D3\ModCfg\Application\Model\Exception\d3ShopCompatibilityAdapterException
-     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
-     * @throws \OxidEsales\Eshop\Core\Exception\StandardException
+     * @throws d3ShopCompatibilityAdapterException
+     * @throws d3_cfg_mod_exception
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
+     * @throws StandardException
      */
     public function isD3OQMRestHandlingActive()
     {
-        $oD3CfgMod = d3_cfg_mod::get(d3_d3oqm_model_handler::D3OQMMODID);
+        $oD3CfgMod = d3_cfg_mod::get(handler::D3OQMMODID);
         if (false == $oD3CfgMod || false == $oD3CfgMod->isActive()) {
             return false;
         }
 
-        if (false == $this->getConfig()->getConfigParam('blUseStock')
+        if (false == Registry::getConfig()->getConfigParam('blUseStock')
             || $this->isAdmin()
             || false == $oD3CfgMod->getValue('useRemainingStock')
         ) {

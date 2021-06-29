@@ -1,6 +1,6 @@
 [{if $d3oqmError}]
     <div class="msg" style="border-color: #D11104;">
-        <img src="[{$oViewConf->getImageUrl('d3_att_sign.png')}]" align="left" style="margin-right: 3px;">
+        <img src="[{$oViewConf->getImageUrl('d3_att_sign.png')}]" style="text-align: left; margin-right: 3px;">
         <div><strong>[{oxmultilang ident="D3OQM_ERROR_HEADLINE"}]</strong></div><br>
         <div>
         [{if $d3oqmError->sD3oqmError_Type == 'minimum'}]

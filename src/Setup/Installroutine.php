@@ -1,32 +1,37 @@
 <?php
 
+namespace D3\Oqm\Setup;
+
 use D3\ModCfg\Application\Model\Install\d3install_updatebase;
 use D3\ModCfg\Application\Model\Installwizzard\d3installconfirmmessage;
+use Doctrine\DBAL\DBALException;
+use OxidEsales\Eshop\Core\Exception\ConnectionException;
+use OxidEsales\Eshop\Core\Exception\DatabaseConnectionException;
+use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
 use OxidEsales\Eshop\Core\Registry;
 
 /**
- * User: kristianhempel
- * Date: 04.03.13
- * automatische Installation
+ * Class d3_oqm_Setup_InstallRoutine
+ *
  */
-class d3_oqm_Setup_InstallRoutine extends d3install_updatebase
+class Installroutine extends d3install_updatebase
 {
-    // Standardwert f�r checkModCfgSameRevision() und updateModCfgSameRevision()
+    // Standardwert fuer checkModCfgSameRevision() und updateModCfgSameRevision()
     public $sModKey = 'd3oqm';
     public $sModName = 'D3 Bestellmengen Manager';
-    public $sModVersion = '5.0.4.2';
-    public $sModRevision = '5042';
-    public $sBaseConf = 'S7vv2==NGZuVTIybjVhSVVGUlFSYlUrTkkrWnR0MWxjaGpiemt3S09FMy9uZUcxNWEybmhLQjExVFhqY
-jJPa0xYR1dVNzcwbVFxbGpJczQ0VnVwaGxVZUQ3dGV4RWpjTHErcjI1WFU3a1V6Mmk3cWN0ZlZvV093M
-Wg4TEZBRGR3QjcxTXdxdFRYS0ZkTW0vbmRoWFJRNmswOTNnc0ppRjBiUlNzbkhWZUlNcGxRWU9XKzRtd
-FpRT0dNcGN2SnB5YUVUYzAwZ3ZMRXlPZEVUUy9ZWEF6K2RvMGxqaWVpTk9nNkEyU2MrYUVZVFRIUXRlN
-jZqUjArMEI4VzBwVEgvQzFiWEZieFFBU3ZKMTlHSGRucnhRZDZ4YndQdnVxaXRYYVk0b01seGRsNjRZT
-WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
+    public $sModVersion = '5.0.4.3';
+    public $sModRevision = '5043';
+    public $sBaseConf = 'yp6v2==eUVPTnZHZktXRnR5SGJRU0JwRHZMTmlnNTlBK2FBL2wvWU16bXIvN1c0c1VuR1JVbFJOQ3pPZ
+kZMVFZYTzJCL2d1VTJUUnlZQWF1eXNueHZoVzJMKzlJb2Z1cDR6OVJobllFSWpOVWtpVlFta2UwUmZhM
+zVvMDlLY2hWMi84RFByZFVQZWZLYWdDQ2tMNUZ4NHJqQlhhSktqTUc5WGhqT01XakdGSXJLZ0tzZXFmN
+1ZFbzRPNXR5a2JoRlp0WE04a2srcDJ3WVFWRVMzb0xWTytaSkdyckNLMWVSZnZzV3lDYWZQeTU1QVkrc
+Fl1OUw0aFFETml6MjVBRWZ0bHVieEoxc0UzdUFFSDBtTFNyZGZOZ2ZWSllSdHhqN1lsdjZYTjViVzJIW
+kwzZ2pvOWJWTjVFSUhmOGltaWxSSDNwWkQ=';
 
     public $sBaseValue = '';
     public $sMinModCfgVersion = '5.3.0.0';
 
-    // auszuf�hrende Check- und Updateanweisungen in auszuf�hrender Reihenfolge
+    // auszufuehrende Check- und Updateanweisungen in auszufuehrender Reihenfolge
     protected $_aUpdateMethods = array(
         array(
             'check' => 'checkModCfgItemExist',
@@ -61,17 +66,17 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
             'do'    => 'messageOldSmartyFiles',
         ),
         array(
-            'check' => 'checkModCfgSameRevision', // pr�ft auf nachgezogene Revisionsnummer und �bertr�gt diese ggf.
+            'check' => 'checkModCfgSameRevision', // prueft auf nachgezogene Revisionsnummer und uebertraegt diese ggf.
             'do'    => 'updateModCfgSameRevision'
         ),
     );
 
-    /***** Standardwerte f�r aufgerufene Funktionen ********************************************/
+    /***** Standardwerte fuer aufgerufene Funktionen ********************************************/
 
     // alle zu aktualisierenden Module, verwendet nicht onDeactivate-Handler
     protected $_aRefreshMetaModuleIds = array('d3oqm');
 
-    // Standardwerte f�r checkFields(), _addTable() und fixFields()
+    // Standardwerte fuer checkFields(), _addTable() und fixFields()
     public $aFields = array(
         array(
             'sTableName'  => 'oxarticles',
@@ -105,7 +110,7 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
         ),
     );
 
-    // Standardwerte f�r checkIndizes() und fixIndizes()
+    // Standardwerte fuer checkIndizes() und fixIndizes()
     public $aIndizes = array(
         array(
             'sTableName'  => 'oxarticles',
@@ -124,8 +129,8 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
      * check if wrong template block
      *
      * @return bool
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws DBALException
+     * @throws DatabaseConnectionException
      */
     public function checkWrongTemplateBlock()
     {
@@ -144,10 +149,10 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
      * fix Version 3.2.0.1
      *
      * @return bool
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\ConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DBALException
+     * @throws ConnectionException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function fixWrongTemplateBlock()
     {
@@ -162,7 +167,7 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
                 'oxshopid'    => $oShop->getId(),
             );
 
-            // abw�rtskompatibel auch mit Feldname als Key (siehe "OXNAME"),
+            // abwaertskompatibel auch mit Feldname als Key (siehe "OXNAME"),
             // dann jedoch keine Duplikatentfernung bei mehrfacher Feldzuweisung.
             $aInsertFields = array(
                 array(
@@ -170,11 +175,11 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
                     'fieldname'     => 'OXFILE',
                     // Feldinhalt
                     'content'       => 'widget_product_listitem_grid_tobasket.tpl',
-                    // bei Update, Inhalt wird �berschrieben
+                    // bei Update, Inhalt wird ueberschrieben
                     'force_update'  => true,
                     // Inhalt muss gequoted werden
                     'use_quote'     => true,
-                    // Multilang-Felder auf Basis dieses Feldes werden bei INSERT mit diesem Wert gef�llt,
+                    // Multilang-Felder auf Basis dieses Feldes werden bei INSERT mit diesem Wert gefuellt,
                     // wenn diese in der Liste nicht anderweitig belegt sind
                     'use_multilang' => false,
                 ),
@@ -190,8 +195,8 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
      * check if 'd3/d3oqm' is in oxmodule
      *
      * @return bool
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
+     * @throws DBALException
+     * @throws DatabaseConnectionException
      */
     public function hasOldOxmoduleInOxtplblocks()
     {
@@ -208,9 +213,9 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
 
     /**
      * @return bool
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DBALException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function fixOldOxmoduleInOxtplblocks()
     {
@@ -230,8 +235,8 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
      * @param null $iDirectNumber
      *
      * @return bool
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function hasInitialTypeField($iDirectNumber = null)
     {
@@ -239,14 +244,14 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
         if ($iDirectNumber === null) {
             for ($i = 0; $i <= 2; $i++) {
                 $iNumber  = $i == 0 ? null : $i;
-                $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_type{$iNumber}");
+                $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_type$iNumber");
                 if ($blReturn) {
                     return $blReturn;
                 }
             }
         } else {
             $iNumber  = $iDirectNumber == 0 ? null : $iDirectNumber;
-            $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_type{$iNumber}");
+            $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_type$iNumber");
         }
 
         return $blReturn;
@@ -254,8 +259,8 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
 
     /**
      * @return bool
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function updateInitialTypeField()
     {
@@ -275,17 +280,17 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
      * @param null $iNumber
      *
      * @return bool
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     protected function _updateInitialTypeField($iNumber = null)
     {
         if ($this->hasInitialTypeField($iNumber)) {
             $aQueries = array(
-                "UPDATE oxarticles SET D3OQM_MINIMUM = IF(d3_ve_value{$iNumber} = 0, NULL, d3_ve_value{$iNumber}) WHERE d3_ve_type{$iNumber} = 'minimum' AND D3OQM_MINIMUM = 0;",
-                "UPDATE oxarticles SET D3OQM_MAXIMUM = IF(d3_ve_value{$iNumber} = 0, NULL, d3_ve_value{$iNumber}) WHERE d3_ve_type{$iNumber} = 'maximum' AND D3OQM_MAXIMUM = 0;",
-                "UPDATE oxarticles SET D3OQM_PACKAGE = IF(d3_ve_value{$iNumber} = 0, NULL, d3_ve_value{$iNumber}) WHERE d3_ve_type{$iNumber} = 'package' AND D3OQM_PACKAGE = 0;",
-                "ALTER TABLE `oxarticles` DROP `d3_ve_type{$iNumber}`;",
+                "UPDATE oxarticles SET D3OQM_MINIMUM = IF(d3_ve_value$iNumber = 0, NULL, d3_ve_value$iNumber) WHERE d3_ve_type$iNumber = 'minimum' AND D3OQM_MINIMUM = 0;",
+                "UPDATE oxarticles SET D3OQM_MAXIMUM = IF(d3_ve_value$iNumber = 0, NULL, d3_ve_value$iNumber) WHERE d3_ve_type$iNumber = 'maximum' AND D3OQM_MAXIMUM = 0;",
+                "UPDATE oxarticles SET D3OQM_PACKAGE = IF(d3_ve_value$iNumber = 0, NULL, d3_ve_value$iNumber) WHERE d3_ve_type$iNumber = 'package' AND D3OQM_PACKAGE = 0;",
+                "ALTER TABLE `oxarticles` DROP `d3_ve_type$iNumber`;",
             );
             $blReturn = $this->_executeMultipleQueries($aQueries);
             $this->_getDatabaseHandler()->resetFieldCache();
@@ -304,10 +309,10 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
      *
      *
      * @return bool
-     * @throws \Doctrine\DBAL\DBALException
-     * @throws \OxidEsales\Eshop\Core\Exception\ConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DBALException
+     * @throws ConnectionException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function fixFields()
     {
@@ -323,8 +328,8 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
      * @param null $iDirectNumber
      *
      * @return bool
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function hasInitialValueField($iDirectNumber = null)
     {
@@ -332,14 +337,14 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
         if ($iDirectNumber === null) {
             for ($i = 0; $i <= 2; $i++) {
                 $iNumber  = $i == 0 ? null : $i;
-                $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_value{$iNumber}");
+                $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_value$iNumber");
                 if ($blReturn) {
                     return $blReturn;
                 }
             }
         } else {
             $iNumber  = $iDirectNumber == 0 ? null : $iDirectNumber;
-            $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_value{$iNumber}");
+            $blReturn = $this->_checkTableFieldExist('oxarticles', "d3_ve_value$iNumber");
         }
 
         return $blReturn;
@@ -347,8 +352,8 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
 
     /**
      * @return bool
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     public function updateInitialValueField()
     {
@@ -368,14 +373,14 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
      * @param null $iNumber
      *
      * @return bool
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseConnectionException
-     * @throws \OxidEsales\Eshop\Core\Exception\DatabaseErrorException
+     * @throws DatabaseConnectionException
+     * @throws DatabaseErrorException
      */
     protected function _updateInitialValueField($iNumber = null)
     {
         if ($this->hasInitialValueField($iNumber)) {
             $aQueries = array(
-                "ALTER TABLE `oxarticles` DROP `d3_ve_value{$iNumber}`;"
+                "ALTER TABLE `oxarticles` DROP `d3_ve_value$iNumber`;"
             );
             $blReturn = $this->_executeMultipleQueries($aQueries);
             $this->_getDatabaseHandler()->resetFieldCache();
@@ -392,7 +397,7 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
     public function hasOldSmartyFiles()
     {
 
-        $file = $this->getConfig()->getConfigParam('sShopDir') . 'core/smarty/plugins/function.d3_oqm_getMinAmount.php';
+        $file = Registry::getConfig()->getConfigParam('sShopDir') . 'core/smarty/plugins/function.d3_oqm_getMinAmount.php';
 
         if( is_file($file)) {
             return true;
@@ -402,11 +407,11 @@ WpZWWdUOVh4K2VxVmxOR2lDb08wTVhSR3Y=';
 
     public function messageOldSmartyFiles()
     {
-        $file = $this->getConfig()->getConfigParam('sShopDir') . 'core/smarty/plugins/function.d3_oqm_getMinAmount.php';
+        $file = Registry::getConfig()->getConfigParam('sShopDir') . 'core/smarty/plugins/function.d3_oqm_getMinAmount.php';
         /** @var d3installconfirmmessage $oInstallConfirmMessage */
         $oInstallConfirmMessage = oxNew(d3installconfirmmessage::class, $this);
-        $oInstallConfirmMessage->ConfirmCustomMessage(
-            Registry::getLang()->translateString('D3OQM_INSTALLATION_OLDSMARTYFILEFOUND').  " {$file}"
+        $oInstallConfirmMessage->confirmCustomMessage(
+            Registry::getLang()->translateString('D3OQM_INSTALLATION_OLDSMARTYFILEFOUND').  $file
         );
     }
 }

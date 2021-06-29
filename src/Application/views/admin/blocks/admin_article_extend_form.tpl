@@ -5,7 +5,7 @@
         <td colspan="2">
             <fieldset title="[{oxmultilang ident="D3OQM_PLAIN_TITLE"}]" style="padding-left: 5px;">
                 <legend>[{oxmultilang ident="D3OQM_TITLE"}]</legend>
-                <table border="0" style="width:100%">
+                <table style="border: none; width:100%">
                     <tr>
                         <td class="edittext">
                             <label for="d3oqm_minimum">[{oxmultilang ident="D3OQM_LIMITTYPE_MIN"}]</label>

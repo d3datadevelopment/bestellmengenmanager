@@ -12,11 +12,11 @@
  * @link          http://www.oxidmodule.com
  */
 
+namespace D3\Oqm\Controllers\Admin;
+
 use D3\ModCfg\Application\Controller\Admin\d3_cfg_mod_list;
 
-/**
- */
-class d3_oqm_controllers_admin_list extends d3_cfg_mod_list
+class Listcontroller extends d3_cfg_mod_list
 {
     /**
      * @var string

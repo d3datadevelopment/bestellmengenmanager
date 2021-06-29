@@ -13,7 +13,11 @@
  * @link          http://www.oxidmodule.com
  */
 
+namespace D3\Oqm\Modules\Core;
+
 use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\EshopCommunity\Core\Exception\FileException;
+use Smarty;
 
 /**
  * Class d3_oxutilsview_oqm
@@ -21,10 +25,10 @@ use OxidEsales\Eshop\Core\Registry;
 class d3_oxutilsview_oqm extends d3_oxutilsview_oqm_parent
 {
     /**
-     * @param smarty $oSmarty
+     * @param Smarty $oSmarty
      *
      * @return null|void
-     * @throws \OxidEsales\EshopCommunity\Core\Exception\FileException
+     * @throws FileException
      */
     protected function _fillCommonSmartyProperties($oSmarty)
     {
@@ -32,6 +36,6 @@ class d3_oxutilsview_oqm extends d3_oxutilsview_oqm_parent
 
         $oSmarty->plugins_dir[] = Registry::getConfig()
                 ->getActiveView()->getViewConfig()->getModulePath('d3oqm')
-            . 'core/smarty/plugins';
+            . 'Core/Smarty/plugins';
     }
 }

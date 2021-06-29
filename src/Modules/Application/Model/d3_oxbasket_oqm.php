@@ -1,6 +1,15 @@
 <?php
 
+namespace D3\Oqm\Modules\Application\Model;
+
 use D3\ModCfg\Application\Model\Configuration\d3_cfg_mod;
+use D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception;
+use D3\Oqm\Application\Model\handler;
+use OxidEsales\Eshop\Application\Model\BasketItem;
+use OxidEsales\Eshop\Core\Exception\ArticleInputException;
+use OxidEsales\Eshop\Core\Exception\NoArticleException;
+use OxidEsales\Eshop\Core\Exception\ObjectException;
+use OxidEsales\Eshop\Core\Exception\OutOfStockException;
 use OxidEsales\Eshop\Core\Module\Module;
 use OxidEsales\Eshop\Core\Registry;
 
@@ -39,11 +48,11 @@ class d3_oxbasket_oqm extends d3_oxbasket_oqm_parent
      *
      * @return object
      *
-     * @throws \OxidEsales\Eshop\Core\Exception\OutOfStockException
-     * @throws \D3\ModCfg\Application\Model\Exception\d3_cfg_mod_exception
-     * @throws \OxidEsales\Eshop\Core\Exception\ArticleInputException
-     * @throws \OxidEsales\Eshop\Core\Exception\NoArticleException
-     * @throws \OxidEsales\Eshop\Core\Exception\ObjectException
+     * @throws OutOfStockException
+     * @throws d3_cfg_mod_exception
+     * @throws ArticleInputException
+     * @throws NoArticleException
+     * @throws ObjectException
      * @throws object
      */
     public function addToBasket(
@@ -56,7 +65,7 @@ class d3_oxbasket_oqm extends d3_oxbasket_oqm_parent
         $sOldBasketItemId = null
     ) {
 
-        $oD3CfgMod = d3_cfg_mod::get(d3_d3oqm_model_handler::D3OQMMODID);
+        $oD3CfgMod = d3_cfg_mod::get(handler::D3OQMMODID);
         /** @var Module $oModule */
         $oModule = oxNew(Module::class);
 
@@ -64,7 +73,7 @@ class d3_oxbasket_oqm extends d3_oxbasket_oqm_parent
         //is module inactive or amount is zero or article is bundle article
         if (false == $oD3CfgMod
             || false == $oD3CfgMod->isActive()
-            || false == $oModule->load(d3_d3oqm_model_handler::D3OQMMODID)
+            || false == $oModule->load(handler::D3OQMMODID)
             || false == $oModule->isActive()
             || empty($sAmount)
             || $blBundle != false
@@ -83,7 +92,7 @@ class d3_oxbasket_oqm extends d3_oxbasket_oqm_parent
         startProfile(__METHOD__);
 
         $sNewAmount = $sAmount;
-        $dAmount    = d3_d3oqm_model_handler::convertStrToFloat($sAmount);
+        $dAmount    = handler::convertStrToFloat($sAmount);
         $dOldAmount = 0;
         $sBasketId  = $this->getItemKey($sProductID, $aSel, $aPersParam, $blBundle);
 
@@ -91,13 +100,13 @@ class d3_oxbasket_oqm extends d3_oxbasket_oqm_parent
         /** @var $oArticle d3_oxarticle_oqm */
         $oArticle = oxNew('oxarticle');
         if ($oArticle->load($sProductID)) {
-            $oD3OQMHandler = d3_d3oqm_model_handler::getInstance();
+            $oD3OQMHandler = handler::getInstance();
             $oD3OQMHandler->setCurrentArticle($oArticle);
 
             // get old amount from basket
             if ($oArticle->hasD3OQMAvailableOptions()) {
                 if ($aBasketItems = $this->getContents()) {
-                    /** @var $oBasketItem \OxidEsales\Eshop\Application\Model\BasketItem */
+                    /** @var $oBasketItem BasketItem */
                     if ($oBasketItem = $aBasketItems[$sBasketId]) {
                         $dOldAmount = $oBasketItem->getAmount();
                     }
@@ -124,8 +133,8 @@ class d3_oxbasket_oqm extends d3_oxbasket_oqm_parent
                     Registry::getSession()->setVariable('blAddedNewItem', true);
                 }
 
-                $this->_aD3OQMDrifts = d3_d3oqm_model_handler::getInstance()->getDrifts();
-                $this->getSession()->setVariable('_aD3OQMDrifts', serialize($this->_aD3OQMDrifts));
+                $this->_aD3OQMDrifts = handler::getInstance()->getDrifts();
+                Registry::getSession()->setVariable('_aD3OQMDrifts', serialize($this->_aD3OQMDrifts));
             }
         }
 
@@ -149,7 +158,7 @@ class d3_oxbasket_oqm extends d3_oxbasket_oqm_parent
      */
     public function getD3OQMDrifts()
     {
-        return unserialize($this->getSession()->getVariable('_aD3OQMDrifts'));
+        return unserialize(Registry::getSession()->getVariable('_aD3OQMDrifts'));
     }
 
     /**
@@ -158,8 +167,8 @@ class d3_oxbasket_oqm extends d3_oxbasket_oqm_parent
      */
     public function resetD3OQMDrifts()
     {
-        d3_d3oqm_model_handler::getInstance()->resetDrifts();
-        $this->getSession()->deleteVariable('_aD3OQMDrifts');
+        handler::getInstance()->resetDrifts();
+        Registry::getSession()->deleteVariable('_aD3OQMDrifts');
     }
 
 }
