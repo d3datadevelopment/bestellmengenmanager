@@ -3,7 +3,7 @@
         [{capture name="javaScript"}]
 
         function d3OqmChangeAmount(targets) {
-            $(targets).on('click', function (e) {
+            $(targets).bind('click', function (e) {
                 e.preventDefault();
                 let calcFactor = 1000;
                 let target = "#" + $(this).attr('data-target');

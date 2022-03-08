@@ -1,9 +1,9 @@
 {
     "title": "<i class='fab fa-d3 d3fa-color-blue'></i> Bestellmengenmanager",
-    "moduleversion": "5.0.4.3",
+    "moduleversion": "5.0.4.4",
     "titledesc": "für den Oxid eShop",
     "author": "D³ Data Development",
-    "moduledate": "29.06.2021",
+    "moduledate": "08.03.2022",
     "editors": "",
     "tagline": "",
     "image": "",
@@ -63,6 +63,7 @@
         "modulename"    : "<i class='fab fa-d3 d3fa-color-blue'></i> Bestellmengenmanager",
         "menutitle"     : "<i class='fab fa-d3 d3fa-color-blue'></i> Bestellmengenmanager",
         "modulefolder"  : "oqm",
+        "metadataident" : "d3oqm",
         "modcfgident"   : "d3oqm",
         "composerident" : "d3/oqm"
     },

@@ -51,7 +51,7 @@
                         [{/if}]
                         <hr>
 
-                        [{if $aDrift.type|count > 0}]
+                        [{if $aDrift.type|@count > 0}]
                             [{assign var="sDriftTitle" value="D3OQM_DRIFT_DESC1"|oxmultilangassign}]
                             [{$sDriftTitle|replace:'%1':$aDrift.title|replace:'%2':$aDrift.artnum}]
                             <ul>

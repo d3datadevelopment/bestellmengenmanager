@@ -19,14 +19,14 @@ class Installroutine extends d3install_updatebase
     // Standardwert fuer checkModCfgSameRevision() und updateModCfgSameRevision()
     public $sModKey = 'd3oqm';
     public $sModName = 'D3 Bestellmengen Manager';
-    public $sModVersion = '5.0.4.3';
-    public $sModRevision = '5043';
-    public $sBaseConf = 'yp6v2==eUVPTnZHZktXRnR5SGJRU0JwRHZMTmlnNTlBK2FBL2wvWU16bXIvN1c0c1VuR1JVbFJOQ3pPZ
-kZMVFZYTzJCL2d1VTJUUnlZQWF1eXNueHZoVzJMKzlJb2Z1cDR6OVJobllFSWpOVWtpVlFta2UwUmZhM
-zVvMDlLY2hWMi84RFByZFVQZWZLYWdDQ2tMNUZ4NHJqQlhhSktqTUc5WGhqT01XakdGSXJLZ0tzZXFmN
-1ZFbzRPNXR5a2JoRlp0WE04a2srcDJ3WVFWRVMzb0xWTytaSkdyckNLMWVSZnZzV3lDYWZQeTU1QVkrc
-Fl1OUw0aFFETml6MjVBRWZ0bHVieEoxc0UzdUFFSDBtTFNyZGZOZ2ZWSllSdHhqN1lsdjZYTjViVzJIW
-kwzZ2pvOWJWTjVFSUhmOGltaWxSSDNwWkQ=';
+    public $sModVersion = '5.0.4.4';
+    public $sModRevision = '5044';
+    public $sBaseConf = 'd2vv2==ejZTMW83WmY1dVFmb2Z2UTNISS95V1RGUTVSMmNTMEloN2d3ZXMxTWlVZ0U0VDFOOVp2a3pqc
+zZyNGZJWHZGZjNjVktnTm1pcjFkUmNiMzFqamg1ZXpaNVkveTgxdjE0d0owN1dEQlhKU25PMnpacE1Wd
+FVrK2Q5QmpvWk9GTnRta1ZmRVd2blZQbUYzUTVURWJrbU1hTVRRZTBLcWJnM05sMUlyRlNjUld1Tjc5V
+Xk3ZnJPQ2x3UzVhNjJTOTRuT0NsRUdGejZ0ZXFQZlVTTTNRSkZEbDRQaHgvM3J0Q0FXQmEvUFZjdjNEZ
+lVxN2lWSUs0alIzZlZteXBxQ3lTMkg1N1ZiWTdndlA1NWE4UkNiM3FjWEhTS0paY243MUZZRzJKRklPN
+WVleElGdnRVc2N4N2g5akE5M0dxK3lkanA=';
 
     public $sBaseValue = '';
     public $sMinModCfgVersion = '5.3.0.0';

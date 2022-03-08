@@ -6,6 +6,7 @@ Das Modul ist für die Verwendung mit den folgenden OXID-Themes vorbereitet:
 
 * Azure
 * Flow
+* Wave
 
 Verwenden Sie in Ihrem Shop ein angepasstes Verzeichnis für Ihre Templates (neues Theme oder CustomTheme), kopieren Sie die Templates  und / oder die CSS-Dateien in die neuen Ordner. 
 

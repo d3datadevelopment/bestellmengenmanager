@@ -27,7 +27,7 @@ $aModule = [
         . 'Wenn das Modul &uuml;ber den Shop aktiviert wurde, muss danach unter:</br>' //
         . '<strong>/D&sup3; Module/Modul-Connector/Modulverwaltung/</strong> das Modul aktiviert werden.',
     'thumbnail'      => 'picture.png',
-    'version'        => '5.0.4.3',
+    'version'        => '5.0.4.4',
     'author'         => 'D&sup3; Data Development',
     'email'          => 'support@shopmodule.com',
     'url'            => 'https://www.oxidmodule.com/',
