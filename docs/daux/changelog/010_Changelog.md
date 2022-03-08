@@ -2,6 +2,12 @@
 title: Changelog
 ---
 
+## 5.0.4.4 - (2022-03-08)
+### Fixed
+- Smarty Count Modifier korrigiert
+
+---
+
 ## 5.0.4.3 - (2021-06-29)
 ### Added
 - Modul verfügbar in OXID 6.2.4 und 6.3.0
