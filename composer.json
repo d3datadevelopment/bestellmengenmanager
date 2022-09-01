@@ -1,0 +1,59 @@
+{
+  "name": "d3/oqm",
+  "description": "D3 Bestellmengenmanager",
+  "type": "oxideshop-module",
+  "keywords": [
+    "oxid",
+    "modules",
+    "eShop",
+    "d3",
+    "packung",
+    "minimal",
+    "maximal",
+    "menge"
+  ],
+  "authors": [
+    {
+        "name": "D3 Data Development (Inh. Thomas Dartsch)",
+        "email": "info@shopmodule.com",
+        "homepage": "https://www.d3data.de",
+        "role": "Owner"
+    }
+  ],
+  "support": {
+    "email": "support@shopmodule.com"
+  },
+  "homepage": "https://www.oxidmodule.com/",
+  "license": [
+    "proprietary"
+  ],
+  "extra": {
+    "oxideshop": {
+      "source-directory": "/src",
+      "target-directory": "d3/oqm"
+    },
+    "patches": {
+      "oxid-esales/azure-theme": {
+        "add OQM changes to azure theme files - 2020-02-17": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c1075dc3dba0592c34eb5d30989871374e8d7210/azure_theme_142.patch"
+      },
+      "oxid-esales/flow-theme": {
+        "add OQM changes to flow theme files - 2020-02-17": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c1075dc3dba0592c34eb5d30989871374e8d7210/flow_theme_330.patch"
+      },
+      "oxid-esales/wave-theme": {
+        "add OQM changes to wave theme files - 2020-06-11": "https://git.d3data.de/D3Public/Bestellmengenmanager/raw/commit/c1075dc3dba0592c34eb5d30989871374e8d7210/wave_theme_131.patch"
+      }
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-sourceguardian": "*",
+    "oxid-esales/oxideshop-ce": "6.0 - 6.12",
+    "d3/modcfg": "^5.3.0.000 || ^6.0",
+    "cweagans/composer-patches": "~1.7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "D3\\Oqm\\": "../../../source/modules/d3/oqm"
+    }
+  }
+}

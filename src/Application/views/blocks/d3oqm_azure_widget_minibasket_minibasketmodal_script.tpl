@@ -1,0 +1,6 @@
+[{$smarty.block.parent}]
+[{d3modcfgcheck modid="d3oqm"}][{/d3modcfgcheck}]
+[{if $mod_d3oqm}]
+    [{oxscript add='$(\'#d3OQMFlyOut\').oxModalPopup({ target: \'#d3OQMFlyOut\', openDialog: true, width: \'318\', modal: false});'}]
+    [{oxscript add='$(\'#d3OQMFlyOut\').css(\'z-index\',\'inherit\');'}]
+[{/if}]

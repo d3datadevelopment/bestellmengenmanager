@@ -1,0 +1,59 @@
+From da739ea5d2a639a87bb895bdb2f90db622b1b5ff Mon Sep 17 00:00:00 2001
+From: Daniel Seifert <ds@shopmodule.com>
+Date: Thu, 6 Feb 2020 14:16:43 +0100
+Subject: [PATCH] add OQM changes to azure theme files
+
+---
+ tpl/page/compare/compare.tpl              | 6 +++++-
+ tpl/widget/minibasket/minibasketmodal.tpl | 5 ++++-
+ tpl/widget/product/compareitem.tpl        | 6 +++++-
+ 3 files changed, 14 insertions(+), 3 deletions(-)
+
+diff --git a/tpl/page/compare/compare.tpl b/tpl/page/compare/compare.tpl
+index 9995c07..01a4f9f 100644
+--- a/tpl/page/compare/compare.tpl
++++ b/tpl/page/compare/compare.tpl
+@@ -75,7 +75,11 @@
+                                       <input type="hidden" name="aid" value="[{$product->oxarticles__oxid->value}]">
+                                       <input type="hidden" name="anid" value="[{$product->oxarticles__oxnid->value}]">
+                                       <input type="hidden" name="pgNr" value="0">
+-                                      <input type="hidden" name="am" value="1">
++[{* D3 MOD OQM START CHANGED *}]
++                                      [{block name="d3oqm_azure_page_compare_amount"}]
++                                          <input type="hidden" name="am" value="1">
++                                      [{/block}]
++[{* D3 MOD OQM END CHANGED *}]
+                                       <input type="hidden" name="removecompare" value="1">
+                                       [{oxhasrights ident="TOBASKET"}]
+                                           <button class="submitButton" id="remove_cmp_[{$product->oxarticles__oxid->value}]" type="submit" title="[{oxmultilang ident="REMOVE"}]" name="send">[{oxmultilang ident="REMOVE"}]</button>
+diff --git a/tpl/widget/minibasket/minibasketmodal.tpl b/tpl/widget/minibasket/minibasketmodal.tpl
+index f747362..efb45e3 100644
+--- a/tpl/widget/minibasket/minibasketmodal.tpl
++++ b/tpl/widget/minibasket/minibasketmodal.tpl
+@@ -1,4 +1,7 @@
+ [{include file="widget/minibasket/minibasket.tpl" _prefix="modal"}]
+ [{oxscript add="$('#modalbasketFlyout').oxModalPopup({ target: '#modalbasketFlyout', openDialog: true, width: 'auto'});"}]
+     [{oxscript add="if ($('.scrollable .scrollbarBox').length > 0) { $('.scrollable .scrollbarBox').jScrollPane({showArrows: true, verticalArrowPositions: 'split' });}"}]
+-    [{oxscript add="$('#modalbasketFlyout').css('z-index','inherit');"}]
+\ No newline at end of file
++    [{oxscript add="$('#modalbasketFlyout').css('z-index','inherit');"}]
++[{* D3 OQM START added *}]
++[{block name="d3oqm_azure_widget_minibasket_minibasketmodal_script"}][{/block}]
++[{* D3 OQM END added*}]
+diff --git a/tpl/widget/product/compareitem.tpl b/tpl/widget/product/compareitem.tpl
+index 6350036..66a9896 100644
+--- a/tpl/widget/product/compareitem.tpl
++++ b/tpl/widget/product/compareitem.tpl
+@@ -114,7 +114,11 @@
+                 [{if $blShowToBasket}]
+                     [{oxhasrights ident="TOBASKET"}]
+                         <p class="fn clear">
+-                            <input type="text" name="am" value="1" size="3" autocomplete="off" class="textbox" title="[{oxmultilang ident="QUANTITY" suffix="COLON"}]">
++[{* D3 MOD OQM START CHANGED *}]
++                            [{block name="d3oqm_azure_widget_product_compareitem_amount"}]
++                                <input type="text" name="am" value="1" size="3" autocomplete="off" class="textbox" title="[{oxmultilang ident="QUANTITY" suffix="COLON"}]">
++                            [{/block}]
++[{* D3 MOD OQM END CHANGED *}]
+                             <button type="submit" class="submitButton largeButton">[{oxmultilang ident="TO_CART"}]</button>
+                         </p>
+                     [{/oxhasrights}]

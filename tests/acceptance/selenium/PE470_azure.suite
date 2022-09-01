@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="cases/setEnviroment.html">setEnvironment</a></td></tr>
+<tr><td><a href="cases/setAdminRoundOff.html">setAdminRoundOff</a></td></tr>
+<tr><td><a href="cases/testArticleErrorMin100Max50.html">testArticleErrorMin100Max50</a></td></tr>
+<tr><td><a href="cases/testErrorArticlePackage10.html">testErrorArticlePackage10</a></td></tr>
+<tr><td><a href="cases/testErrorArticleMaximum50.html">testErrorArticleMaximum50</a></td></tr>
+<tr><td><a href="cases/testErrorArticleMinimum5.html">testErrorArticleMinimum5</a></td></tr>
+<tr><td><a href="cases/testArticleNormal.html">testArticleNormal</a></td></tr>
+<tr><td><a href="cases/setAdminRoundOn.html">setAdminRoundOn</a></td></tr>
+<tr><td><a href="cases/testArticleErrorMin100Max50RoundOn.html">testArticleErrorMin100Max50RoundOn</a></td></tr>
+<tr><td><a href="cases/testRoundedArticlePackage10.html">testRoundedArticlePackage10</a></td></tr>
+<tr><td><a href="cases/testRoundedArticleMaximum50.html">testRoundedArticleMaximum50</a></td></tr>
+<tr><td><a href="cases/testRoundedArticleMinimum5.html">testRoundedArticleMinimum5</a></td></tr>
+</tbody></table>
+</body>
+</html>

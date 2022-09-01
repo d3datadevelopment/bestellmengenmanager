@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://heidelpay.oxiddemo.com/" />
+<title>testRoundedArticlePackage10</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">testRoundedArticlePackage10</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}d3testartikel-package-10.html?force_sid=reset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.d3OQMDetails</td>
+	<td>(Verpackungseinheit: 10 Stück)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=amountToBasket</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=toBasket</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.functions</td>
+	<td>Sie haben 1 Stück eingegeben.<br />Wir haben für Sie die Menge von 10 Stück hinzugefügt.<br /> Die Gesamtmenge im Warenkorb beträgt damit: 10 Stück<br />Folgende Bedingung wurden für den Artikel d3testartikel_package_10 (Art.Nr.: d3oqm_pac10) nicht erfüllt:der Artikel kann nur in Mengen von jeweils 10 Stück oder einem Vielfachen davon bestellt werden.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

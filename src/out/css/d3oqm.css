@@ -1,0 +1,19 @@
+/* Author     : D3 support@shopmodule.com
+ * Modul      : Bestellmengenmanager
+ * Modid      : d3OQM*/
+
+#detailsMain .information .tobasket{ position:relative; }
+#amountToBasket{ min-width:40px; }
+.basketFlyout.d3OQMFlyOut .d3OQMImg{ float:left; margin-right:10px; padding:0 0 10px; }
+.basketFlyout.d3OQMFlyOut .d3OQMClosePop{ cursor:pointer; float:right; margin:0 10px 0 0; }
+.d3OQMDetails{ float:left; }
+.basketFlyout.d3OQMFlyOut hr{ width:100%; clear:both; margin-bottom:10px; display:block; }
+.basketFlyout.d3OQMFlyOut ul{ margin:6px 0 0 15px; }
+.basketFlyout.d3OQMFlyOut li{ list-style:disc outside none; }
+.basketFlyout.d3OQMFlyOut .functions{ border-top:1px solid white; margin-bottom:10px;}
+
+
+/* wave theme */
+.line-view .input-group-append { margin-left:1px; }
+#details_container.details .tobasket-input-group { width:290px; }
+#details_container.details .tobasket-input-group button#toBasket { margin-left:1px; }
