@@ -17,7 +17,7 @@
         </div>
     [{elseif $d3ThemeId === 'flow' || $d3ThemeId === 'wave'}]
         [{$smarty.block.parent}]
-        <input type="hidden" name="am" value="[{d3_oqm_getminamount product=$product}]">
+        [{*<input type="hidden" name="am" value="[{d3_oqm_getminamount product=$product}]">*}]
     [{/if}]
 [{else}]
     [{$smarty.block.parent}]

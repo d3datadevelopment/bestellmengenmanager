@@ -6,9 +6,6 @@
  * is a violation of the license agreement and will be prosecuted by
  * civil and criminal law.
  * http://www.shopmodule.com
- *
- * @package orderQuantityManager
- * @name d3_oxarticle_oqm
  */
 
 namespace D3\Oqm\Modules\Application\Model;

@@ -2,6 +2,15 @@
 title: Changelog
 ---
 
+## 5.0.5.0 - (2022-08-26)
+### Added
+- installierbar in OXID 6.5 (CE 6.12)
+
+### Changed
+- der "in den Warenkorb"-Button bei Artikelboxen ohne Mengenwähler fügt nach OXID-Standard nur 1 Artikel hinzu, der vom Modul dann ggf. mit Meldung korrigiert wird
+
+---
+
 ## 5.0.4.4 - (2022-03-08)
 ### Fixed
 - Smarty Count Modifier korrigiert
