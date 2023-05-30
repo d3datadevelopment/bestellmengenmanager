@@ -3,9 +3,9 @@ title: Systemanforderungen
 ---
 
 * PHP Version
-    * 7.0.x bis 8.0.x
+    * 7.0.x bis 8.1.x
 * PHP Decoder
-    * installierter ionCube Loader
+    * installierter ionCube Loader (PHP 7) oder SourceGuardian (PHP 8)
 * Shopeditionen
     * OXID eShop Community Edition (CE)
     * OXID eShop Professional Edition (PE)
@@ -18,6 +18,7 @@ title: Systemanforderungen
         * 6.2.x
         * 6.3.x
         * 6.4.x
+        * 6.5.x
 * Themes
     * azure
     * flow
